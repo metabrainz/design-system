@@ -22,5 +22,5 @@ We are working on the beta version, instructions for usage to be added soon. We 
 - [Contriubting Guidelines](#)
 
 ## Contribute
-Work in Progress.Coming soon.We will keep you updated. :blush:
+Work in Progress. Coming soon. We will keep you updated. :blush:
 
