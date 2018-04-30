@@ -4,9 +4,9 @@
   </a>
 </p>
 
-# MetaBrainz Design System
+# MusicBrainz Design System
 
-The humble beginnings of a grand MetaBrainz redesign. 🎨
+The humble beginnings of a grand MusicBrainz redesign. 🎨
 
 ## About
 
