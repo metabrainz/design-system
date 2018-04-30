@@ -1,8 +1,4 @@
-<p align="center">
-  <a href="http://www.musicbrainz.org">
-    <img width="180" src="MusicBrainz.svg">
-  </a>
-</p>
+![cover](/cover.png)
 
 # MusicBrainz Design System
 
