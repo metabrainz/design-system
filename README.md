@@ -1,6 +1,6 @@
 <p align="center">
   <a href="http://www.musicbrainz.org">
-    <img width="230" src="MusicBrainz.svg">
+    <img width="180" src="MusicBrainz.svg">
   </a>
 </p>
 
@@ -14,13 +14,13 @@ This design system is a living, breathing document that contains all of the buil
 
 ## Usage
 
-We are still working on the beta version, instructions for usage to be added soon. We also have plans to make it available as a npm package.
+We are working on the beta version, instructions for usage to be added soon. We also have plans to make it available as a npm package.
 
 ## Quick Links
 - [Design Guidelines](#)
 - [Components](#)
-- [Contrubting Guidelines](#)
+- [Contriubting Guidelines](#)
 
 ## Contribute
-Coming soon. We will keep you updated.
+Work in Progress. Coming soon. We will keep you updated. :blush:
 
