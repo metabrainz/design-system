@@ -15,7 +15,7 @@ We are working on the beta version, instructions for usage to be added soon. We 
 ## Quick Links
 - [Design Guidelines](#)
 - [Components](#)
-- [Contriubting Guidelines](#)
+- [Contributing Guidelines](#)
 
 ## Contribute
 Work in Progress. Coming soon. We will keep you updated. :blush:
