@@ -1,24 +1,101 @@
 @import "colors.less";
+@import "theme.less";
+
 
 // Variables
 // --------------------------------------------------
 
-@size: 4px;
+@size: 0px;
 
 
 // Buttons
 // --------------------------------------------------
 
 .btn {
-  border:0px;
+  border: 0px;  
   border-radius: 1px;
   transition: all 0.2s;
-  margin: -0.15em;
-  color: #fff;
-  background: @purple;
-  padding: @size+10;
-  margin: 5px;
+  margin: 3px;  
+  color: #fff; 
+  text-align: center; 
+  .heading-small;
+}
+
+.btn-primary (@color){
+	.btn;
+	background: @color;
+	padding: @size+10;
+
+	&:hover,
+	&:focus {
+    background: lighten(@color, 10%);
   }
+}
+
+
+.btn-secondary (@color){
+	.btn;
+
+	border-width: 2px;
+	border-style: solid ;
+	outline-offset: 5px;
+	border-color: @color;
+	background-color: transparent;
+	padding: @size+8;
+	color: @color;
+	
+	&:hover,
+	&:focus {
+    background: @color;
+    color: #fff;
+	}	
+}
+
+
+.btn-small (@color) {
+  .btn;
+  padding: @size+5;
+  background: @color;
+
+	&:hover,
+	&:focus {
+    background: lighten(@color, 10%);
+  }
+    
+}
+
+.btn-secondary-small (@color) {
+  .btn;
+  border-width: 2px;
+	border-style: solid ;
+	outline-offset: 5px;
+	border-color: @color;
+	background-color: transparent;
+	padding: @size+3;
+	color: @color;
+	
+	&:hover,
+	&:focus {
+    background: @color;
+    color: #fff;
+	}	
+}
+
+.btn-default {
+	.btn-primary(@purple);
+}
+
+.btn-default-secondary {
+	.btn-secondary(@purple);
+}
+
+.btn-default-small {
+	.btn-small(@purple);
+}
+
+.btn-default-secondary-small{
+	.btn-secondary-small(@purple);
+}
 
 
 
