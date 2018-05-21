@@ -24,8 +24,8 @@ storiesOf('Buttons', module)
   	withInfo('Heeeyy') 
   		(
 		() => (<div>
-				<Button bsStyle="secondary" onClick={action('clicked')}>Secondar Button</Button>
-				<Button bsStyle="primary" bsSize="small" onClick={action('clicked')}>Secondary Small Button</Button>
+				<Button bsStyle="secondary" onClick={action('clicked')}>Secondary Button</Button>
+				<Button bsStyle="secondary" bsSize="small" onClick={action('clicked')}>Secondary Small Button</Button>
 				</div>
 			)))
 
