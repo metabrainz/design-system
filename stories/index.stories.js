@@ -3,20 +3,61 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
+import { withInfo } from '@storybook/addon-info';
 
-import { Button, Welcome } from '@storybook/react/demo';
+import '../less/styles.less';
 
-import TestButton from '../components/TestButton.js';
+import {Button, ButtonGroup} from 'react-bootstrap';
 
-storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
+storiesOf('Buttons', module)
+  
+  .add('Default Button', 
+  	withInfo('Heeeyy') 
+  		(
+		() => (<div>
+				<Button bsStyle="primary" onClick={action('clicked')}>Default Button</Button>
+				<Button bsStyle="primary" bsSize="small" onClick={action('clicked')}>Default Small Button</Button>
+				</div>
+			)))
 
-storiesOf('TestButton', module)
-  .add('TestButton', () => <TestButton onClick={action('clicked')}></TestButton>)
-  .add('with some emoji', () => (
-    <Button onClick={action('clicked')}>
-      <span role="img" aria-label="so cool">
-        😀 😎 👍 💯
-      </span>
-    </Button>
-  ));
+  .add('Secondary Button', 
+  	withInfo('Heeeyy') 
+  		(
+		() => (<div>
+				<Button bsStyle="secondary" onClick={action('clicked')}>Secondar Button</Button>
+				<Button bsStyle="primary" bsSize="small" onClick={action('clicked')}>Secondary Small Button</Button>
+				</div>
+			)))
+
+  .add('Warning Button', 
+  	withInfo('Heeeyy') 
+  		(
+		() => (<div>
+				<Button bsStyle="warning" onClick={action('clicked')}>Warning Button</Button>
+				<Button bsStyle="warning" bsSize="small" onClick={action('clicked')}>Warning Small Button</Button>
+				</div>
+			)))
+
+  .add('Danger Button', 
+  	withInfo('Heeeyy') 
+  		(
+		() => (<div>
+				<Button bsStyle="danger" onClick={action('clicked')}>Danger Button</Button>
+				<Button bsStyle="danger" bsSize="small" onClick={action('clicked')}>Danger Small Button</Button>
+				</div>
+			)))
+
+  .add('Success Button', 
+  	withInfo('Heeeyy') 
+  		(
+		() => (<div>
+				<Button bsStyle="success" onClick={action('clicked')}>Success Button</Button>
+				<Button bsStyle="success" bsSize="small" onClick={action('clicked')}>Success Small Button</Button>
+				</div>
+			)));
+
+  
+  
+
+
 

@@ -45,6 +45,7 @@
     "url-loader": "^1.0.1"
   },
   "peerDependencies": {
+    "@storybook/addon-info": "^3.4.5",
     "react": "^16.3.2",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.3.2"

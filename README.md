@@ -10,7 +10,7 @@ This design system is a living, breathing document that contains all of the buil
 
 ## Usage
 
-We are working on the beta version, instructions for usage to be added soon. We also have plans to make it available as a npm package.
+We are working on the beta version, instructions for usage to be added soon. 
 
 ## Quick Links
 - [Design Guidelines](#)
