@@ -24,13 +24,10 @@
     "url": "https://github.com/chhavijustme/design-system/issues"
   },
   "homepage": "https://github.com/chhavijustme/design-system#readme",
-  "dependencies": {
-    "react": ">=15.3.0",
-    "react-bootstrap": "0.32.1",
-    "react-dom": ">=15.3.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.3",
+    "@storybook/addon-info": "^3.4.5",
     "@storybook/addon-links": "^3.4.3",
     "@storybook/addons": "^3.4.3",
     "@storybook/react": "^3.4.3",

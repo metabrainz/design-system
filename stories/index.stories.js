@@ -11,35 +11,35 @@ import {Button, ButtonGroup} from 'react-bootstrap';
 
 storiesOf('Buttons', module)
   
-  .add('Default Button', 
-  	withInfo('Heeeyy') 
+  .add('Primary Button', 
+  	withInfo('') 
   		(
 		() => (<div>
-				<Button bsStyle="primary" onClick={action('clicked')}>Default Button</Button>
-				<Button bsStyle="primary" bsSize="small" onClick={action('clicked')}>Default Small Button</Button>
+				<Button bsStyle="primary" onClick={action('clicked')}>Primary Button</Button>
+				<Button bsStyle="primary" bsSize="small" onClick={action('clicked')}>Primary Small Button</Button>
 				</div>
 			)))
 
   .add('Secondary Button', 
-  	withInfo('Heeeyy') 
+  	withInfo('') 
   		(
 		() => (<div>
 				<Button bsStyle="secondary" onClick={action('clicked')}>Secondary Button</Button>
 				<Button bsStyle="secondary" bsSize="small" onClick={action('clicked')}>Secondary Small Button</Button>
-				</div>
+			    </div>
 			)))
 
   .add('Warning Button', 
-  	withInfo('Heeeyy') 
+  	withInfo('') 
   		(
 		() => (<div>
 				<Button bsStyle="warning" onClick={action('clicked')}>Warning Button</Button>
 				<Button bsStyle="warning" bsSize="small" onClick={action('clicked')}>Warning Small Button</Button>
-				</div>
+			    </div>
 			)))
 
   .add('Danger Button', 
-  	withInfo('Heeeyy') 
+  	withInfo('') 
   		(
 		() => (<div>
 				<Button bsStyle="danger" onClick={action('clicked')}>Danger Button</Button>
@@ -48,11 +48,29 @@ storiesOf('Buttons', module)
 			)))
 
   .add('Success Button', 
-  	withInfo('Heeeyy') 
+  	withInfo('') 
   		(
 		() => (<div>
 				<Button bsStyle="success" onClick={action('clicked')}>Success Button</Button>
 				<Button bsStyle="success" bsSize="small" onClick={action('clicked')}>Success Small Button</Button>
+				</div>
+			)))
+
+  .add('Set of Buttons', 
+  	withInfo('') 
+  		(
+		() => (<div>
+				<Button bsStyle="secondary" onClick={action('clicked')}>Success Button</Button>
+				<Button bsStyle="primary" onClick={action('clicked')}>Success Button</Button>
+				</div>
+			)))
+
+  .add('Links', 
+  	withInfo('') 
+  		(
+		() => (<div>
+				<Button bsStyle="link" onClick={action('clicked')}>I am a default link</Button>
+				<Button bsStyle="link" bsSize="xsmall" onClick={action('clicked')}>I am a small link</Button>
 				</div>
 			)));
 
