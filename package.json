@@ -13,17 +13,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chhavijustme/design-system.git"
+    "url": "git+https://github.com/metabrainz/design-system"
   },
   "keywords": [
     "design-system"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "GPLv2+",
   "bugs": {
-    "url": "https://github.com/chhavijustme/design-system/issues"
+    "url": "https://github.com/metabrainz/design-system"
   },
-  "homepage": "https://github.com/chhavijustme/design-system#readme",
+  "homepage": "https://github.com/metabrainz/design-system#readme",
   "dependencies": {},
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.3",
@@ -32,6 +32,7 @@
     "@storybook/addons": "^3.4.3",
     "@storybook/react": "^3.4.3",
     "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
     "babel-runtime": "^6.26.0",
     "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
