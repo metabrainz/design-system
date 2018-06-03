@@ -1,0 +1,50 @@
+{
+  "name": "design-system",
+  "version": "1.0.0",
+  "description": "Design system of MB",
+  "main": "components/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metabrainz/design-system.git"
+  },
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/metabrainz/design-system/issues"
+  },
+  "homepage": "https://github.com/metabrainz/design-system#readme",
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.4.3",
+    "@storybook/addon-info": "^3.4.5",
+    "@storybook/addon-links": "^3.4.3",
+    "@storybook/addons": "^3.4.3",
+    "@storybook/react": "^3.4.3",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "8.2.2",
+    "babel-runtime": "^6.26.0",
+    "css-loader": "^0.28.11",
+    "csscomb": "4.2.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-import": "2.12.0",
+    "eslint-plugin-react": "7.8.2",
+    "file-loader": "^1.1.11",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "react": "^16.3.2",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.3.2",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1"
+  },
+  "peerDependencies": {
+    "react": "^16.3.2",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.3.2"
+  }
+}
