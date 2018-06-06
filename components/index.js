@@ -1,4 +1,5 @@
 import Button from './Button';
 import Breadcrumb from './Breadcrumb';
+import Badge from './Badge';
 
-export {Button, Breadcrumb};
+export {Badge, Button, Breadcrumb};

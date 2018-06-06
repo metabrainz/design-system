@@ -5,11 +5,17 @@ import {action} from '@storybook/addon-actions';
 import {linkTo} from '@storybook/addon-links';
 import {withInfo} from '@storybook/addon-info';
 
-import {Button, Breadcrumb} from '../components';
+import {Badge, Button, Breadcrumb} from '../components';
 
 import '../less/styles.less';
 
 // Stories of components
+storiesOf('Badge', module)
+  .add('Default', withInfo('')(() => (
+    <div>
+      Open Edits <Badge>42</Badge>
+    </div>
+  )));
 
 storiesOf('Breadcrumb', module)
   .add('Default', withInfo('')(() => (
