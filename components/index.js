@@ -1,5 +1,6 @@
+import Alert from './Alert';
 import Button from './Button';
 import Breadcrumb from './Breadcrumb';
 import Badge from './Badge';
 
-export {Badge, Button, Breadcrumb};
+export {Alert, Badge, Button, Breadcrumb};
