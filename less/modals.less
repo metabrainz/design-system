@@ -1,0 +1,28 @@
+//
+// Modals
+// --------------------------------------------------
+
+
+// Actual modal
+.modal-content {
+  border-top: 4px solid @brand-primary;
+  .box-shadow(0 3px 9px rgba(0,0,0,.1));
+}
+
+
+// Footer (for actions)
+.modal-footer {
+  background: @modal-footer-bg;
+
+  .btn + .btn {
+    margin-bottom: 5px;
+  }
+}
+
+
+// Scale up the modal
+@media (min-width: @screen-sm-min) {
+    .modal-content {
+    .box-shadow(0 12px 24px 0 rgba(0,0,0,.1));
+  }
+}
