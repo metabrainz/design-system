@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import {ButtonGroup} from 'react-bootstrap';
-import {storiesOf} from '@storybook/react';
+import {storiesOf, addDecorator} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
 import {linkTo} from '@storybook/addon-links';
 import {withInfo} from '@storybook/addon-info';
@@ -10,6 +10,16 @@ import {Alert, Badge, Button, Breadcrumb} from '../components';
 import AlertDismissable from '../components/Alert';
 
 import '../less/styles.less';
+
+const margins = {
+  margin: '5px 100px 10px 5px', 
+};
+const MarginDecorator = (storyFn) => (
+  <div style={margins}>
+    { storyFn() }
+  </div>
+);
+addDecorator(MarginDecorator);
 
 // Stories of components
 storiesOf('Alert', module)
