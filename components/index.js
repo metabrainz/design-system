@@ -1,5 +1,6 @@
-import Button from './Button';
-import Breadcrumb from './Breadcrumb';
 import Badge from './Badge';
+import Breadcrumb from './Breadcrumb';
+import Button from './Button';
+import Modal from './Modal';
 
-export {Badge, Button, Breadcrumb};
+export {Badge, Breadcrumb, Button, Modal};

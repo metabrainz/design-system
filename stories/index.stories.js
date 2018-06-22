@@ -5,7 +5,7 @@ import {action} from '@storybook/addon-actions';
 import {linkTo} from '@storybook/addon-links';
 import {withInfo} from '@storybook/addon-info';
 
-import {Badge, Button, Breadcrumb} from '../components';
+import {Badge, Button, Breadcrumb, Modal} from '../components';
 
 import '../less/styles.less';
 
@@ -13,7 +13,7 @@ import '../less/styles.less';
 storiesOf('Badge', module)
   .add('Default', withInfo('')(() => (
     <div>
-      Open Edits <Badge>42</Badge>
+      {'Open Edits'} <Badge>{'42'}</Badge>
     </div>
   )));
 
@@ -76,4 +76,24 @@ storiesOf('Buttons', module)
       <Button bsStyle="link" onClick={action('clicked')}>{'I am a default link'}</Button>
       <Button bsSize="xsmall" bsStyle="link" onClick={action('clicked')}>{'I am a small link'}</Button>
     </div>
+  )));
+
+storiesOf('Modal', module)
+  .add('Default', withInfo('')(() => (
+    <div>
+      <Modal.Dialog>
+        <Modal.Header closeButton>
+          <Modal.Title>{'Modal title'}</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>{'One fine body...'}</Modal.Body>
+
+        <Modal.Footer>
+          <Button bsStyle="link">{'Close'}</Button>
+          <Button bsStyle="primary">{'Save changes'}</Button>
+        </Modal.Footer>
+      </Modal.Dialog>
+
+    </div>
+
   )));
