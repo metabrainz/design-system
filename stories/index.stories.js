@@ -26,7 +26,7 @@ storiesOf('Alert', module)
   .add('Danger Alert', withInfo('')(() => (
     <div>
       <AlertDismissable bsStyle="danger">
-        <p>{'You just deleted the entitiy. The changes will now be voted on. Click '}<a className="alert-link">{'here'}</a> {'to know more!'}</p>
+        <p>{'You just deleted the entity. The changes will now be voted on. Click '}<a className="alert-link">{'here'}</a> {'to know more!'}</p>
       </AlertDismissable>
     </div>
   )))
@@ -34,7 +34,7 @@ storiesOf('Alert', module)
   .add('Info Alert', withInfo('')(() => (
     <div>
       <AlertDismissable bsStyle="info">
-        <p>{'Hmm, you cannot edit it. Permissions to delete this entity are only granted to priviledged editors. Click'} <a className="alert-link">{'here'}</a> {'to know more!'} </p>
+        <p>{'Hmm, you cannot edit it. Permissions to delete this entity are only granted to privileged editors. Click'} <a className="alert-link">{'here'}</a> {'to know more!'} </p>
       </AlertDismissable>
     </div>
   )))
