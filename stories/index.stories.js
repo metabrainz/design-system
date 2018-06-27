@@ -6,7 +6,7 @@ import {action} from '@storybook/addon-actions';
 import {linkTo} from '@storybook/addon-links';
 import {withInfo} from '@storybook/addon-info';
 
-import {Alert, Badge, Button, Breadcrumb} from '../components';
+import {Alert, Badge, Button, Breadcrumb, Label, Modal} from '../components';
 import AlertDismissable from '../components/Alert';
 
 import '../less/styles.less';
@@ -121,4 +121,35 @@ storiesOf('Buttons', module)
       <Button bsStyle="link" onClick={action('clicked')}>{'I am a default link'}</Button>
       <Button bsSize="xsmall" bsStyle="link" onClick={action('clicked')}>{'I am a small link'}</Button>
     </div>
+  )));
+
+storiesOf('Label', module)
+  .add('Default', withInfo('')(() => (
+    <div>
+      <Label bsStyle="default">{'Default'}</Label>{' '}
+      <Label bsStyle="primary">{'Primary'}</Label>{' '}
+      <Label bsStyle="success">{'Success'}</Label> <Label bsStyle="info">{'Info'}</Label>{' '}
+      <Label bsStyle="warning">{'Warning'}</Label>{' '}
+      <Label bsStyle="danger">{'Danger'}</Label>
+    </div>
+  )));
+
+storiesOf('Modal', module)
+  .add('Default', withInfo('')(() => (
+    <div>
+      <Modal.Dialog>
+        <Modal.Header closeButton>
+          <Modal.Title>{'Modal title'}</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>{'One fine body...'}</Modal.Body>
+
+        <Modal.Footer>
+          <Button bsStyle="link">{'Close'}</Button>
+          <Button bsStyle="primary">{'Save changes'}</Button>
+        </Modal.Footer>
+      </Modal.Dialog>
+
+    </div>
+
   )));
