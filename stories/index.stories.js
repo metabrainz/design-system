@@ -22,6 +22,21 @@ const MarginDecorator = (storyFn) => (
 addDecorator(MarginDecorator);
 
 // Stories of components
+storiesOf('Welcome', module)
+  .add('Hey there 👋', withInfo('')(() => (
+    <div>
+      <h2 style={{color: '#eb743b'}}>{'MusicBrainz UI Library'}</h2>
+      <p style={{marginBottom: '1em', marginTop: '1em', maxWidth: '40vw'}}>
+        {'This storybook is around to help you find your way around our UI components. We hope it will help us maintain a scalable and consistent visual system for UI development. Look around and feel free to reach out to us on IRC #metabrainz to talk about it! 😀'}
+      </p>
+      <p><strong>{'Some quick links:'}</strong></p>
+      <li><a href="https://musicbrainz.org/">{'MusicBrainz'}</a></li>
+      <li><a href="https://github.com/metabrainz/design-system">{'GitHub Repo'}</a></li>
+      <li><a href="http://tickets.musicbrainz.org/">{'Bug Tracker'}</a></li>
+      <li><a href="https://twitter.com/MusicBrainz">{'Twitter'}</a></li>
+    </div>
+  )));
+
 storiesOf('Alert', module)
   .add('Danger Alert', withInfo('')(() => (
     <div>
