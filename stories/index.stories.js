@@ -1,13 +1,25 @@
-import React from 'react';
+import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 import {ButtonGroup} from 'react-bootstrap';
-import {storiesOf} from '@storybook/react';
+import {storiesOf, addDecorator} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
 import {linkTo} from '@storybook/addon-links';
 import {withInfo} from '@storybook/addon-info';
 
-import {Badge, Button, Breadcrumb, Label, Modal} from '../components';
+import {Alert, Badge, Button, Breadcrumb, Label, Modal} from '../components';
+import AlertDismissable from '../components/Alert';
 
 import '../less/styles.less';
+
+const margins = {
+  margin: '5px 100px 10px 5px', 
+};
+const MarginDecorator = (storyFn) => (
+  <div style={margins}>
+    { storyFn() }
+  </div>
+);
+addDecorator(MarginDecorator);
 
 // Stories of components
 storiesOf('Welcome', module)
@@ -22,6 +34,39 @@ storiesOf('Welcome', module)
       <li><a href="https://github.com/metabrainz/design-system">{'GitHub Repo'}</a></li>
       <li><a href="http://tickets.musicbrainz.org/">{'Bug Tracker'}</a></li>
       <li><a href="https://twitter.com/MusicBrainz">{'Twitter'}</a></li>
+    </div>
+  )));
+
+storiesOf('Alert', module)
+  .add('Danger Alert', withInfo('')(() => (
+    <div>
+      <AlertDismissable bsStyle="danger">
+        <p>{'You just deleted the entity. The changes will now be voted on. Click '}<a className="alert-link">{'here'}</a> {'to know more!'}</p>
+      </AlertDismissable>
+    </div>
+  )))
+
+  .add('Info Alert', withInfo('')(() => (
+    <div>
+      <AlertDismissable bsStyle="info">
+        <p>{'Hmm, you cannot edit it. Permissions to delete this entity are only granted to privileged editors. Click'} <a className="alert-link">{'here'}</a> {'to know more!'} </p>
+      </AlertDismissable>
+    </div>
+  )))
+
+  .add('Warning Alert', withInfo('')(() => (
+    <div>
+      <AlertDismissable bsStyle="warning">
+        <p>{'We think your browser might be outdated. Better check that one out before proceeding!'}</p>
+      </AlertDismissable>
+    </div>
+  )))
+
+  .add('Success Alert', withInfo('')(() => (
+    <div>
+      <AlertDismissable bsStyle="success">
+        <p>{'Your tag has been successfully added. Do vote on other relevant tags as well!'}</p>
+      </AlertDismissable>
     </div>
   )));
 
