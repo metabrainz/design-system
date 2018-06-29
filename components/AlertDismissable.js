@@ -17,13 +17,11 @@ class AlertDismissable extends React.Component {
   }
 
   render() {
-    if (this.state.show) {
-      return (
-        <Alert bsStyle={this.props.bsStyle} onDismiss={this.handleDismiss}>
-          {this.props.children}
-        </Alert>
-      );
-    }
+    return this.state.show ? (
+      <Alert bsStyle={this.props.bsStyle} onDismiss={this.handleDismiss}>
+        {this.props.children}
+      </Alert>
+    ) : null;
   }
 }
 
