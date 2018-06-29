@@ -1,13 +1,18 @@
-import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import {ButtonGroup} from 'react-bootstrap';
 import {storiesOf, addDecorator} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
 import {linkTo} from '@storybook/addon-links';
 import {withInfo} from '@storybook/addon-info';
 
-import {Alert, Badge, Button, Breadcrumb, Label, Modal} from '../components';
-import AlertDismissable from '../components/Alert';
+import {
+  AlertDismissable,
+  Badge,
+  Button,
+  Breadcrumb,
+  Label,
+  Modal,
+} from '../components';
 
 import '../less/styles.less';
 
