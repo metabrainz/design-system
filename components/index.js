@@ -8,6 +8,7 @@ import Glyphicon from './Glyphicon';
 import Modal from './Modal';
 import Pagination from './Pagination';
 import ProgressBar from './ProgressBar';
+import Tooltip from './Tooltip';
 
 export {
   AlertDismissable,
@@ -20,4 +21,5 @@ export {
   Modal,
   Pagination,
   ProgressBar,
+  Tooltip,
 };
