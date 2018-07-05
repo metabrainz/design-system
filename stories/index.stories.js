@@ -1,5 +1,5 @@
 import React from 'react';
-import {ButtonGroup, MenuItem} from 'react-bootstrap';
+import {ButtonGroup, ButtonToolbar, MenuItem, OverlayTrigger} from 'react-bootstrap';
 import {storiesOf, addDecorator} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
 import {linkTo} from '@storybook/addon-links';
@@ -16,6 +16,7 @@ import {
   Modal,
   Pagination,
   ProgressBar,
+  Tooltip,
 } from '../components';
 
 import '../less/styles.less';
@@ -263,6 +264,35 @@ storiesOf('Pagination', module)
         <Pagination bsSize="medium">{items}</Pagination>
         <br />
         <Pagination bsSize="small">{items}</Pagination>
+      </div>
+    );
+  }));
+
+storiesOf('Tooltip', module)
+  .add('Default', withInfo('')(() => {
+    const tooltip = (
+      <Tooltip id="tooltip">
+        <strong>{'Holy guacamole!'}</strong> {'Check this info.'}
+      </Tooltip>
+    );
+
+    return (
+      <div>
+        <OverlayTrigger placement="bottom" overlay={tooltip}>
+          <Button bsStyle="primary">Holy guacamole!</Button>
+        </OverlayTrigger>
+        <br />
+        <OverlayTrigger placement="right" overlay={tooltip}>
+          <Button bsStyle="primary">Holy guacamole!</Button>
+        </OverlayTrigger>
+        <br />
+        <OverlayTrigger placement="top" overlay={tooltip}>
+          <Button bsStyle="primary">Holy guacamole!</Button>
+        </OverlayTrigger>
+
+        <OverlayTrigger placement="left" overlay={tooltip}>
+          <Button bsStyle="primary">Holy guacamole!</Button>
+        </OverlayTrigger>
       </div>
     );
   }));
