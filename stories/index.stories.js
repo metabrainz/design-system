@@ -12,16 +12,17 @@ import {
   Breadcrumb,
   Label,
   Modal,
+  ProgressBar,
 } from '../components';
 
 import '../less/styles.less';
 
 const margins = {
-  margin: '5px 100px 10px 5px', 
+  margin: '5px 100px 10px 5px',
 };
 const MarginDecorator = (storyFn) => (
   <div style={margins}>
-    { storyFn() }
+    {storyFn()}
   </div>
 );
 addDecorator(MarginDecorator);
@@ -169,7 +170,12 @@ storiesOf('Modal', module)
           <Button bsStyle="primary">{'Save changes'}</Button>
         </Modal.Footer>
       </Modal.Dialog>
-
     </div>
+  )));
 
+storiesOf('Progress Bar', module)
+  .add('Default', withInfo('')(() => (
+    <div>
+      <ProgressBar bsStyle="success" now={40} />
+    </div>
   )));
