@@ -11,17 +11,18 @@ import {
   Button,
   Breadcrumb,
   Label,
+  Glyphicon,
   Modal,
 } from '../components';
 
 import '../less/styles.less';
 
 const margins = {
-  margin: '5px 100px 10px 5px', 
+  margin: '3em 2em 3em 3em',
 };
 const MarginDecorator = (storyFn) => (
   <div style={margins}>
-    { storyFn() }
+    {storyFn()}
   </div>
 );
 addDecorator(MarginDecorator);
@@ -154,6 +155,34 @@ storiesOf('Label', module)
     </div>
   )));
 
+storiesOf('Glyphicon', module)
+  .add('Primary button with icon', withInfo('')(() => (
+    <div>
+      <Button bsSize="small" bsStyle="primary">
+        <Glyphicon glyph="plus " />
+        {'  Add a Release'}
+      </Button>
+    </div>)))
+
+
+  .add('Secondary button with icon', withInfo('')(() => (
+    <div>
+      <Button bsSize="small" bsStyle="secondary">
+        <Glyphicon glyph="pencil " />
+        {'  Edit'}
+      </Button>
+    </div>)))
+
+  .add('Danger button with icon', withInfo('')(() => (
+    <div>
+
+      <Button bsSize="small" bsStyle="danger">
+        <Glyphicon glyph="trash " />
+        {'   Delete'}
+      </Button>
+    </div>
+  )));
+
 storiesOf('Modal', module)
   .add('Default', withInfo('')(() => (
     <div>
@@ -171,5 +200,4 @@ storiesOf('Modal', module)
       </Modal.Dialog>
 
     </div>
-
   )));
