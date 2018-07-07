@@ -1,5 +1,5 @@
 import React from 'react';
-import {ButtonGroup, ButtonToolbar, MenuItem, OverlayTrigger} from 'react-bootstrap';
+import {ButtonGroup, MenuItem, OverlayTrigger} from 'react-bootstrap';
 import {storiesOf, addDecorator} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
 import {linkTo} from '@storybook/addon-links';
@@ -269,30 +269,46 @@ storiesOf('Pagination', module)
   }));
 
 storiesOf('Tooltip', module)
-  .add('Default', withInfo('')(() => {
-    const tooltip = (
-      <Tooltip id="tooltip">
-        <strong>{'Holy guacamole!'}</strong> {'Check this info.'}
+  .add('Default', withInfo('')(() => (
+    <div>
+      <OverlayTrigger
+        overlay={
+          <Tooltip id="tooltip">
+            <strong>{'New!'}</strong> {'Now add a release directly from here.'}
+          </Tooltip>
+        }
+        placement="bottom"
+      >
+        <Button bsSize="small" bsStyle="primary">
+          <Glyphicon glyph="plus " />
+          {'  Add a Release'}
+        </Button>
+      </OverlayTrigger>
+    </div>
+  )))
+  .add('Placements', withInfo('')(() => (
+    <div>
+      <Tooltip className="in" id="tooltip-right" placement="right">
+        {'Tooltip right'}
       </Tooltip>
-    );
+      <br />
+      <br />
 
-    return (
-      <div>
-        <OverlayTrigger placement="bottom" overlay={tooltip}>
-          <Button bsStyle="primary">Holy guacamole!</Button>
-        </OverlayTrigger>
-        <br />
-        <OverlayTrigger placement="right" overlay={tooltip}>
-          <Button bsStyle="primary">Holy guacamole!</Button>
-        </OverlayTrigger>
-        <br />
-        <OverlayTrigger placement="top" overlay={tooltip}>
-          <Button bsStyle="primary">Holy guacamole!</Button>
-        </OverlayTrigger>
 
-        <OverlayTrigger placement="left" overlay={tooltip}>
-          <Button bsStyle="primary">Holy guacamole!</Button>
-        </OverlayTrigger>
-      </div>
-    );
-  }));
+      <Tooltip className="in" id="tooltip-top" placement="top">
+        {'Tooltip top'}
+      </Tooltip>
+      <br />
+      <br />
+
+      <Tooltip className="in" id="tooltip-left" placement="left">
+        {'Tooltip left'}
+      </Tooltip>
+      <br />
+      <br />
+
+      <Tooltip className="in" id="tooltip-bottom" placement="bottom">
+        {'Tooltip bottom'}
+      </Tooltip>
+    </div>
+  )));
