@@ -1,5 +1,5 @@
 import React from 'react';
-import {ButtonGroup} from 'react-bootstrap';
+import {ButtonGroup, MenuItem} from 'react-bootstrap';
 import {storiesOf, addDecorator} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
 import {linkTo} from '@storybook/addon-links';
@@ -10,6 +10,7 @@ import {
   Badge,
   Button,
   Breadcrumb,
+  DropdownButton,
   Label,
   Modal,
 } from '../components';
@@ -17,11 +18,11 @@ import {
 import '../less/styles.less';
 
 const margins = {
-  margin: '5px 100px 10px 5px', 
+  margin: '5px 100px 10px 5px',
 };
 const MarginDecorator = (storyFn) => (
   <div style={margins}>
-    { storyFn() }
+    {storyFn()}
   </div>
 );
 addDecorator(MarginDecorator);
@@ -140,6 +141,34 @@ storiesOf('Buttons', module)
     <div>
       <Button bsStyle="link" onClick={action('clicked')}>{'I am a default link'}</Button>
       <Button bsSize="xsmall" bsStyle="link" onClick={action('clicked')}>{'I am a small link'}</Button>
+    </div>
+  )));
+
+storiesOf('Dropdown Button', module)
+  .add('Default', withInfo('')(() => (
+    <div>
+      <DropdownButton
+        bsStyle="secondary"
+        title="Actions"
+      >
+        <MenuItem eventKey="1">{'Merge'}</MenuItem>
+        <MenuItem eventKey="2">{'Delete'}</MenuItem>
+        <MenuItem active eventKey="3">
+          {'Add ISRC Code'}
+        </MenuItem>
+        <MenuItem divider />
+        <MenuItem eventKey="4">{'Let it be'}</MenuItem>
+      </DropdownButton>
+    </div>
+  )))
+
+  .add('Disabled Dropdown', withInfo('')(() => (
+    <div>
+      <DropdownButton
+        bsStyle="secondary"
+        disabled
+        title="Actions"
+      />
     </div>
   )));
 
