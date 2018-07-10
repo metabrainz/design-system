@@ -5,6 +5,7 @@ import Button from './Button';
 import DropdownButton from './DropdownButton';
 import Label from './Label';
 import Modal from './Modal';
+import ProgressBar from './ProgressBar';
 
 export {
   AlertDismissable,
@@ -14,4 +15,5 @@ export {
   DropdownButton,
   Label,
   Modal,
+  ProgressBar,
 };
