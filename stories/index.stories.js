@@ -160,7 +160,7 @@ storiesOf('Glyphicon', module)
     <div>
       <Button bsSize="small" bsStyle="primary">
         <Glyphicon glyph="plus " />
-        {'  Add a Release'}
+        {'Add a Release'}
       </Button>
     </div>)))
 
@@ -169,7 +169,7 @@ storiesOf('Glyphicon', module)
     <div>
       <Button bsSize="small" bsStyle="secondary">
         <Glyphicon glyph="pencil " />
-        {'  Edit'}
+        {'Edit'}
       </Button>
     </div>)))
 
@@ -178,7 +178,7 @@ storiesOf('Glyphicon', module)
 
       <Button bsSize="small" bsStyle="danger">
         <Glyphicon glyph="trash " />
-        {'   Delete'}
+        {'Delete'}
       </Button>
     </div>
   )));
