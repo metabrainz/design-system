@@ -1,5 +1,5 @@
 import React from 'react';
-import {ButtonGroup} from 'react-bootstrap';
+import {ButtonGroup, MenuItem} from 'react-bootstrap';
 import {storiesOf, addDecorator} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
 import {linkTo} from '@storybook/addon-links';
@@ -10,9 +10,11 @@ import {
   Badge,
   Button,
   Breadcrumb,
+  DropdownButton,
   Label,
   Modal,
   Pagination,
+  ProgressBar,
 } from '../components';
 
 import '../less/styles.less';
@@ -144,6 +146,34 @@ storiesOf('Buttons', module)
     </div>
   )));
 
+storiesOf('Dropdown Button', module)
+  .add('Default', withInfo('')(() => (
+    <div>
+      <DropdownButton
+        bsStyle="secondary"
+        title="Actions"
+      >
+        <MenuItem eventKey="1">{'Merge'}</MenuItem>
+        <MenuItem eventKey="2">{'Delete'}</MenuItem>
+        <MenuItem active eventKey="3">
+          {'Add ISRC Code'}
+        </MenuItem>
+        <MenuItem divider />
+        <MenuItem eventKey="4">{'Let it be'}</MenuItem>
+      </DropdownButton>
+    </div>
+  )))
+
+  .add('Disabled Dropdown', withInfo('')(() => (
+    <div>
+      <DropdownButton
+        bsStyle="secondary"
+        disabled
+        title="Actions"
+      />
+    </div>
+  )));
+
 storiesOf('Label', module)
   .add('Default', withInfo('')(() => (
     <div>
@@ -170,9 +200,14 @@ storiesOf('Modal', module)
           <Button bsStyle="primary">{'Save changes'}</Button>
         </Modal.Footer>
       </Modal.Dialog>
-
     </div>
+  )));
 
+storiesOf('Progress Bar', module)
+  .add('Default', withInfo('')(() => (
+    <div>
+      <ProgressBar bsStyle="success" now={40} />
+    </div>
   )));
 
 storiesOf('Pagination', module)
