@@ -13,6 +13,7 @@ import {
   DropdownButton,
   Label,
   Modal,
+  Pagination,
   ProgressBar,
 } from '../components';
 
@@ -208,3 +209,42 @@ storiesOf('Progress Bar', module)
       <ProgressBar bsStyle="success" now={40} />
     </div>
   )));
+
+storiesOf('Pagination', module)
+  .add('Default', withInfo('')(() => (
+    <div>
+      <Pagination>
+        <Pagination.First />
+        <Pagination.Prev />
+        <Pagination.Ellipsis />
+
+        <Pagination.Item>{10}</Pagination.Item>
+        <Pagination.Item>{11}</Pagination.Item>
+        <Pagination.Item active>{12}</Pagination.Item>
+        <Pagination.Item>{13}</Pagination.Item>
+        <Pagination.Item disabled>{14}</Pagination.Item>
+
+        <Pagination.Ellipsis />
+        <Pagination.Next />
+        <Pagination.Last />
+      </Pagination>
+    </div>
+  )))
+  .add('Sizes', withInfo('')(() => {
+    const active = 7;
+    const items = [];
+    for (let number = 1; number <= 10; number++) {
+      items.push(
+        <Pagination.Item active={number === active}>
+          {number}
+        </Pagination.Item>,
+      );
+    }
+    return (
+      <div>
+        <Pagination bsSize="medium">{items}</Pagination>
+        <br />
+        <Pagination bsSize="small">{items}</Pagination>
+      </div>
+    );
+  }));
