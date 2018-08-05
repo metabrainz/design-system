@@ -205,7 +205,7 @@ storiesOf('Glyphicon', module)
     </div>)));
 
 storiesOf('Modal', module)
-  .add('Default', withInfo('')(() => (
+  .add('Default', withInfo('Modals are overlays over the primary application. They help communicate information via a secondary window and allow the user to maintain the context of a particular task. They can be used to get input necessary to make decisions by the system or to display contextual information.')(() => (
     <div>
       <Modal.Dialog>
         <Modal.Header closeButton>
@@ -223,7 +223,7 @@ storiesOf('Modal', module)
   )));
 
 storiesOf('Progress Bar', module)
-  .add('Default', withInfo('')(() => (
+  .add('Default', withInfo('Progress bars help give users immediate feedback. They reduce a user’s uncertainty and give them a reason to wait for an action to complete.')(() => (
     <div>
       <ProgressBar bsStyle="success" now={40} />
     </div>
