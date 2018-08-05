@@ -230,7 +230,7 @@ storiesOf('Progress Bar', module)
   )));
 
 storiesOf('Pagination', module)
-  .add('Default', withInfo('')(() => (
+  .add('Default', withInfo('Pagination helps divide the content into discrete buckets and enables the user to navigate efficiently between them.')(() => (
     <div>
       <Pagination>
         <Pagination.First />
