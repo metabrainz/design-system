@@ -106,9 +106,16 @@ storiesOf('Buttons', module)
     </div>
   )))
 
-  .add('Secondary Button', withInfo('')(() => (
+  .add('Default Button', withInfo('')(() => (
     <div>
-      <Button bsStyle="secondary" onClick={action('clicked')}>{'Secondary Button'}</Button>
+      <Button bsStyle="default" onClick={action('clicked')}>{'Default Button'}</Button>
+      <Button bsSize="small" bsStyle="default" onClick={action('clicked')}>{'Default Small Button'}</Button>
+    </div>
+  )))
+
+  .add('Ghost Button', withInfo('')(() => (
+    <div>
+      <Button bsStyle="secondary" onClick={action('clicked')}>{'Ghost Button'}</Button>
       <Button bsSize="small" bsStyle="secondary" onClick={action('clicked')}>{'Secondary Small Button'}</Button>
     </div>
   )))
@@ -136,7 +143,7 @@ storiesOf('Buttons', module)
 
   .add('Set of Buttons', withInfo('')(() => (
     <div>
-      <Button bsStyle="secondary" onClick={action('clicked')}>{'Secondary Button'}</Button>
+      <Button bsStyle="default" onClick={action('clicked')}>{'Secondary Button'}</Button>
       <Button bsStyle="primary" onClick={action('clicked')}>{'Primary Button'}</Button>
     </div>
   )))
