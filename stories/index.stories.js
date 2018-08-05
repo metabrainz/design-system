@@ -88,7 +88,7 @@ storiesOf('Badge', module)
   )));
 
 storiesOf('Breadcrumb', module)
-  .add('Default', withInfo('')(() => (
+  .add('Default', withInfo('Breadcrumbs help users figure out “Where am I exactly?” rather quickly. All links in a breadcrumb should be clickable except the current. Reloading the current page again would be quite confusing.')(() => (
     <div>
       <Breadcrumb>
         <Breadcrumb.Item href="#">{'Release Group'}</Breadcrumb.Item>
