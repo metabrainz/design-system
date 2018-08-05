@@ -99,56 +99,56 @@ storiesOf('Breadcrumb', module)
   )));
 
 storiesOf('Buttons', module)
-  .add('Primary Button', withInfo('')(() => (
+  .add('Primary Button', withInfo('Buttons set an action in motion. Instead of using “Yes” or “Okay”, it’s better to use verbs that explain what the triggered action will be. For example, “Create new”, “Discard draft”, etc. Use the primary button when it’s the main action on a page/table. Use the smaller one in case of limited space.')(() => (
     <div>
       <Button bsStyle="primary" onClick={action('clicked')}>{'Primary Button'}</Button>
       <Button bsSize="small" bsStyle="primary" onClick={action('clicked')}>{'Primary Small Button'}</Button>
     </div>
   )))
 
-  .add('Default Button', withInfo('')(() => (
+  .add('Default Button', withInfo('Default buttons are used for secondary actions. They’re usually paired with a primary button to provide an alternate choice.')(() => (
     <div>
       <Button bsStyle="default" onClick={action('clicked')}>{'Default Button'}</Button>
       <Button bsSize="small" bsStyle="default" onClick={action('clicked')}>{'Default Small Button'}</Button>
     </div>
   )))
 
-  .add('Ghost Button', withInfo('')(() => (
+  .add('Ghost Button', withInfo('Use ghost buttons to reduce visual clutter on the screen. Take care that the actions via a ghost button are not primary actions.')(() => (
     <div>
       <Button bsStyle="secondary" onClick={action('clicked')}>{'Ghost Button'}</Button>
-      <Button bsSize="small" bsStyle="secondary" onClick={action('clicked')}>{'Secondary Small Button'}</Button>
+      <Button bsSize="small" bsStyle="secondary" onClick={action('clicked')}>{'Small ghost Button'}</Button>
     </div>
   )))
 
-  .add('Warning Button', withInfo('')(() => (
+  .add('Warning Button', withInfo('Just when you need to nudge the user’s attention to make sure they know it’s not another ordinary action, use the warning button.')(() => (
     <div>
       <Button bsStyle="warning" onClick={action('clicked')}>{'Warning Button'}</Button>
       <Button bsSize="small" bsStyle="warning" onClick={action('clicked')}>{'Warning Small Button'}</Button>
     </div>
   )))
 
-  .add('Danger Button', withInfo('')(() => (
+  .add('Danger Button', withInfo('When the primary action is “negative” or irreversible, make use of the danger button to warn the user. For example, “Delete”, “Erase”, “Discard”, “Remove”, etc.')(() => (
     <div>
       <Button bsStyle="danger" onClick={action('clicked')}>{'Danger Button'}</Button>
       <Button bsSize="small" bsStyle="danger" onClick={action('clicked')}>{'Danger Small Button'}</Button>
     </div>
   )))
 
-  .add('Success Button', withInfo('')(() => (
+  .add('Success Button', withInfo('The “Yay, you did it!” button. Use them for highlighting “positive” actions like “Submit”.')(() => (
     <div>
       <Button bsStyle="success" onClick={action('clicked')}>{'Success Button'}</Button>
       <Button bsSize="small" bsStyle="success" onClick={action('clicked')}>{'Success Small Button'}</Button>
     </div>
   )))
 
-  .add('Set of Buttons', withInfo('')(() => (
+  .add('Set of Buttons', withInfo('To make clear a distinction between two options, sometimes it’s better to use different visual weights for buttons.')(() => (
     <div>
       <Button bsStyle="default" onClick={action('clicked')}>{'Secondary Button'}</Button>
       <Button bsStyle="primary" onClick={action('clicked')}>{'Primary Button'}</Button>
     </div>
   )))
 
-  .add('Links', withInfo('')(() => (
+  .add('Links', withInfo('Links are typically used as a means of navigation either within the application, to a place outside, or to a resource. For anything else, especially things that change data, you should be using a button.')(() => (
     <div>
       <Button bsStyle="link" onClick={action('clicked')}>{'I am a default link'}</Button>
       <Button bsSize="xsmall" bsStyle="link" onClick={action('clicked')}>{'I am a small link'}</Button>
