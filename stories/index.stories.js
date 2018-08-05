@@ -149,7 +149,7 @@ storiesOf('Buttons', module)
   )));
 
 storiesOf('Dropdown Button', module)
-  .add('Default', withInfo('')(() => (
+  .add('Default', withInfo('Use a dropdown button when an action is to be chosen from multiple options.')(() => (
     <div>
       <DropdownButton
         bsStyle="secondary"
@@ -166,7 +166,7 @@ storiesOf('Dropdown Button', module)
     </div>
   )))
 
-  .add('Disabled Dropdown', withInfo('')(() => (
+  .add('Disabled Dropdown', withInfo('Keep a dropdown button disabled if its actions can’t yet be performed. For example, while selecting releases to be merged, disable the merge button until releases are selected.')(() => (
     <div>
       <DropdownButton
         bsStyle="secondary"
@@ -177,7 +177,7 @@ storiesOf('Dropdown Button', module)
   )));
 
 storiesOf('Label', module)
-  .add('Default', withInfo('')(() => (
+  .add('Default', withInfo('Labels can be used with items that need to be labeled, categorized, or organized using keywords that describe them.')(() => (
     <div>
       <Label bsStyle="default">{'Default'}</Label>{' '}
       <Label bsStyle="primary">{'Primary'}</Label>{' '}
