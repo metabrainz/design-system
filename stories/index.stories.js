@@ -249,7 +249,7 @@ storiesOf('Pagination', module)
       </Pagination>
     </div>
   )))
-  .add('Sizes', withInfo('')(() => {
+  .add('Sizes', withInfo('Use smaller sizes where space is limited. For example, in tables.')(() => {
     const active = 7;
     const items = [];
     for (let number = 1; number <= 10; number++) {
