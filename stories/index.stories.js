@@ -81,7 +81,7 @@ storiesOf('Alert', module)
   )));
 
 storiesOf('Badge', module)
-  .add('Default', withInfo('')(() => (
+  .add('Default', withInfo('Badges stand out to inform the user that there is something special that warrants their attention. For example, open edits.')(() => (
     <div>
       {'Open Edits'} <Badge>{'42'}</Badge>
     </div>
