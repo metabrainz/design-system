@@ -48,7 +48,7 @@ storiesOf('Welcome', module)
   )));
 
 storiesOf('Alert', module)
-  .add('Danger Alert', withInfo('')(() => (
+  .add('Danger Alert', withInfo('Danger alerts should be used when the system has failed to perform an action, or when the user has made an error.')(() => (
     <div>
       <AlertDismissable bsStyle="danger">
         <p>{'You just deleted the entity. The changes will now be voted on. Click '}<a className="alert-link">{'here'}</a> {'to know more!'}</p>
@@ -56,7 +56,7 @@ storiesOf('Alert', module)
     </div>
   )))
 
-  .add('Info Alert', withInfo('')(() => (
+  .add('Info Alert', withInfo('Info alerts should be used when there are tips or information that a user can benefit from.')(() => (
     <div>
       <AlertDismissable bsStyle="info">
         <p>{'Hmm, you cannot edit it. Permissions to delete this entity are only granted to privileged editors. Click'} <a className="alert-link">{'here'}</a> {'to know more!'} </p>
@@ -64,7 +64,7 @@ storiesOf('Alert', module)
     </div>
   )))
 
-  .add('Warning Alert', withInfo('')(() => (
+  .add('Warning Alert', withInfo('Warning alerts should be used when an action is out of the ordinary or might not be desired.')(() => (
     <div>
       <AlertDismissable bsStyle="warning">
         <p>{'We think your browser might be outdated. Better check that one out before proceeding!'}</p>
@@ -72,7 +72,7 @@ storiesOf('Alert', module)
     </div>
   )))
 
-  .add('Success Alert', withInfo('')(() => (
+  .add('Success Alert', withInfo('Success alerts should be used when an action was performed successfully.')(() => (
     <div>
       <AlertDismissable bsStyle="success">
         <p>{'Your tag has been successfully added. Do vote on other relevant tags as well!'}</p>
