@@ -156,7 +156,7 @@ storiesOf('Label', module)
   )));
 
 storiesOf('Glyphicon', module)
-  .add('Primary button with icon', withInfo('')(() => (
+  .add('With text', withInfo('')(() => (
     <div>
       <Button bsSize="small" bsStyle="primary">
         <Glyphicon glyph="plus " />
@@ -165,23 +165,12 @@ storiesOf('Glyphicon', module)
     </div>)))
 
 
-  .add('Secondary button with icon', withInfo('')(() => (
+  .add('Without text', withInfo('')(() => (
     <div>
       <Button bsSize="small" bsStyle="secondary">
-        <Glyphicon glyph="pencil " />
-        {'Edit'}
+        <Glyphicon glyph="align-center " />
       </Button>
-    </div>)))
-
-  .add('Danger button with icon', withInfo('')(() => (
-    <div>
-
-      <Button bsSize="small" bsStyle="danger">
-        <Glyphicon glyph="trash " />
-        {'Delete'}
-      </Button>
-    </div>
-  )));
+    </div>)));
 
 storiesOf('Modal', module)
   .add('Default', withInfo('')(() => (
