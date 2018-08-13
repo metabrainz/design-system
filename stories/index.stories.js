@@ -1,5 +1,5 @@
 import React from 'react';
-import {ButtonGroup} from 'react-bootstrap';
+import {ButtonGroup, MenuItem} from 'react-bootstrap';
 import {storiesOf, addDecorator} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
 import {linkTo} from '@storybook/addon-links';
@@ -10,9 +10,12 @@ import {
   Badge,
   Button,
   Breadcrumb,
+  DropdownButton,
   Label,
   Glyphicon,
   Modal,
+  Pagination,
+  ProgressBar,
 } from '../components';
 
 import '../less/styles.less';
@@ -144,6 +147,34 @@ storiesOf('Buttons', module)
     </div>
   )));
 
+storiesOf('Dropdown Button', module)
+  .add('Default', withInfo('')(() => (
+    <div>
+      <DropdownButton
+        bsStyle="secondary"
+        title="Actions"
+      >
+        <MenuItem eventKey="1">{'Merge'}</MenuItem>
+        <MenuItem eventKey="2">{'Delete'}</MenuItem>
+        <MenuItem active eventKey="3">
+          {'Add ISRC Code'}
+        </MenuItem>
+        <MenuItem divider />
+        <MenuItem eventKey="4">{'Let it be'}</MenuItem>
+      </DropdownButton>
+    </div>
+  )))
+
+  .add('Disabled Dropdown', withInfo('')(() => (
+    <div>
+      <DropdownButton
+        bsStyle="secondary"
+        disabled
+        title="Actions"
+      />
+    </div>
+  )));
+
 storiesOf('Label', module)
   .add('Default', withInfo('')(() => (
     <div>
@@ -187,6 +218,51 @@ storiesOf('Modal', module)
           <Button bsStyle="primary">{'Save changes'}</Button>
         </Modal.Footer>
       </Modal.Dialog>
-
     </div>
   )));
+
+storiesOf('Progress Bar', module)
+  .add('Default', withInfo('')(() => (
+    <div>
+      <ProgressBar bsStyle="success" now={40} />
+    </div>
+  )));
+
+storiesOf('Pagination', module)
+  .add('Default', withInfo('')(() => (
+    <div>
+      <Pagination>
+        <Pagination.First />
+        <Pagination.Prev />
+        <Pagination.Ellipsis />
+
+        <Pagination.Item>{10}</Pagination.Item>
+        <Pagination.Item>{11}</Pagination.Item>
+        <Pagination.Item active>{12}</Pagination.Item>
+        <Pagination.Item>{13}</Pagination.Item>
+        <Pagination.Item disabled>{14}</Pagination.Item>
+
+        <Pagination.Ellipsis />
+        <Pagination.Next />
+        <Pagination.Last />
+      </Pagination>
+    </div>
+  )))
+  .add('Sizes', withInfo('')(() => {
+    const active = 7;
+    const items = [];
+    for (let number = 1; number <= 10; number++) {
+      items.push(
+        <Pagination.Item active={number === active}>
+          {number}
+        </Pagination.Item>,
+      );
+    }
+    return (
+      <div>
+        <Pagination bsSize="medium">{items}</Pagination>
+        <br />
+        <Pagination bsSize="small">{items}</Pagination>
+      </div>
+    );
+  }));
