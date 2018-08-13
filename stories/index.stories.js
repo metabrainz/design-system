@@ -12,6 +12,7 @@ import {
   Breadcrumb,
   DropdownButton,
   Label,
+  Glyphicon,
   Modal,
   Pagination,
   ProgressBar,
@@ -20,7 +21,7 @@ import {
 import '../less/styles.less';
 
 const margins = {
-  margin: '5px 100px 10px 5px',
+  margin: '3em 2em 3em 3em',
 };
 const MarginDecorator = (storyFn) => (
   <div style={margins}>
@@ -184,6 +185,23 @@ storiesOf('Label', module)
       <Label bsStyle="danger">{'Danger'}</Label>
     </div>
   )));
+
+storiesOf('Glyphicon', module)
+  .add('With text', withInfo('')(() => (
+    <div>
+      <Button bsSize="small" bsStyle="primary">
+        <Glyphicon glyph="plus " />
+        {'Add a Release'}
+      </Button>
+    </div>)))
+
+
+  .add('Without text', withInfo('')(() => (
+    <div>
+      <Button bsSize="small" bsStyle="secondary">
+        <Glyphicon glyph="align-center " />
+      </Button>
+    </div>)));
 
 storiesOf('Modal', module)
   .add('Default', withInfo('')(() => (
