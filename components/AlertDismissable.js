@@ -18,9 +18,9 @@ class AlertDismissable extends React.Component {
 
   render() {
     return this.state.show ? (
-      <Alert bsStyle={this.props.bsStyle} onDismiss={this.handleDismiss}>
-        {this.props.children}
-      </Alert>
+        <Alert bsStyle={this.props.bsStyle} onDismiss={this.handleDismiss}>
+          {this.props.children}
+        </Alert>
     ) : null;
   }
 }
