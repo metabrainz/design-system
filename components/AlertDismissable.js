@@ -5,20 +5,20 @@ class AlertDismissable extends React.Component {
   constructor(props, context) {
     super(props, context);
 
-    this.handleDismiss = this.handleDismiss.bind(this);
+    this.handleClose = this.handleClose.bind(this);
 
     this.state = {
       show: true,
     };
   }
 
-  handleDismiss() {
+  handleClose() {
     this.setState({show: false});
   }
 
   render() {
     return this.state.show ? (
-      <Alert bsStyle={this.props.bsStyle} onDismiss={this.handleDismiss}>
+      <Alert dismissible onClose={this.handleClose} variant={this.props.variant}>
         {this.props.children}
       </Alert>
     ) : null;
