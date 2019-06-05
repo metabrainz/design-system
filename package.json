@@ -46,5 +46,8 @@
     "react": "^16.3.2",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.3.2"
+  },
+  "dependencies": {
+    "react-bootstrap-table-next": "^0.1.15"
   }
 }

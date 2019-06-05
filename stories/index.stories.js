@@ -16,6 +16,7 @@ import {
   Modal,
   Pagination,
   ProgressBar,
+  Table,
   Tooltip,
 } from '../components';
 
@@ -272,6 +273,44 @@ storiesOf('Pagination', module)
         <br />
         <Pagination bsSize="small">{items}</Pagination>
       </div>
+    );
+  }));
+
+storiesOf('Table', module)
+  .add('Default', withInfo('')(() => {
+    const products = [
+      {
+        id: 1,
+        name: 'test',
+        price: 2.22,
+      },
+      {
+        id: 2,
+        name: 'no-test',
+        price: 2.22,
+      },
+      {
+        id: 3,
+        name: 'maybe-test',
+        price: 2.22,
+      },
+    ];
+    const columns = [
+      {
+        dataField: 'id',
+        text: 'Product ID',
+      },
+      {
+        dataField: 'name',
+        text: 'Product Name',
+      },
+      {
+        dataField: 'price',
+        text: 'Product Price',
+      },
+    ];
+    return (
+      <Table columns={columns} data={products} keyField="id" />
     );
   }));
 

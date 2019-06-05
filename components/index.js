@@ -8,6 +8,7 @@ import Glyphicon from './Glyphicon';
 import Modal from './Modal';
 import Pagination from './Pagination';
 import ProgressBar from './ProgressBar';
+import Table from './Table';
 import Tooltip from './Tooltip';
 
 export {
@@ -21,5 +22,6 @@ export {
   Modal,
   Pagination,
   ProgressBar,
+  Table,
   Tooltip,
 };
