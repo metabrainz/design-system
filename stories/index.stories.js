@@ -48,7 +48,7 @@ storiesOf('Welcome', module)
   )));
 
 storiesOf('Alert', module)
-  .add('Danger Alert', withInfo('')(() => (
+  .add('Danger Alert', withInfo('Danger alerts should be used when the system has failed to perform an action, or when the user has made an error.')(() => (
     <div>
       <AlertDismissable bsStyle="danger">
         <p>{'You just deleted the entity. The changes will now be voted on. Click '}<a className="alert-link">{'here'}</a> {'to know more!'}</p>
@@ -56,7 +56,7 @@ storiesOf('Alert', module)
     </div>
   )))
 
-  .add('Info Alert', withInfo('')(() => (
+  .add('Info Alert', withInfo('Info alerts should be used when there are tips or information that a user can benefit from.')(() => (
     <div>
       <AlertDismissable bsStyle="info">
         <p>{'Hmm, you cannot edit it. Permissions to delete this entity are only granted to privileged editors. Click'} <a className="alert-link">{'here'}</a> {'to know more!'} </p>
@@ -64,7 +64,7 @@ storiesOf('Alert', module)
     </div>
   )))
 
-  .add('Warning Alert', withInfo('')(() => (
+  .add('Warning Alert', withInfo('Warning alerts should be used when an action is out of the ordinary or might not be desired.')(() => (
     <div>
       <AlertDismissable bsStyle="warning">
         <p>{'We think your browser might be outdated. Better check that one out before proceeding!'}</p>
@@ -72,7 +72,7 @@ storiesOf('Alert', module)
     </div>
   )))
 
-  .add('Success Alert', withInfo('')(() => (
+  .add('Success Alert', withInfo('Success alerts should be used when an action was performed successfully.')(() => (
     <div>
       <AlertDismissable bsStyle="success">
         <p>{'Your tag has been successfully added. Do vote on other relevant tags as well!'}</p>
@@ -81,14 +81,14 @@ storiesOf('Alert', module)
   )));
 
 storiesOf('Badge', module)
-  .add('Default', withInfo('')(() => (
+  .add('Default', withInfo('Badges stand out to inform the user that there is something special that warrants their attention. For example, open edits.')(() => (
     <div>
       {'Open Edits'} <Badge>{'42'}</Badge>
     </div>
   )));
 
 storiesOf('Breadcrumb', module)
-  .add('Default', withInfo('')(() => (
+  .add('Default', withInfo('Breadcrumbs help users figure out “Where am I exactly?” rather quickly. All links in a breadcrumb should be clickable except the current. Reloading the current page again would be quite confusing.')(() => (
     <div>
       <Breadcrumb>
         <Breadcrumb.Item href="#">{'Release Group'}</Breadcrumb.Item>
@@ -149,7 +149,7 @@ storiesOf('Buttons', module)
   )));
 
 storiesOf('Dropdown Button', module)
-  .add('Default', withInfo('')(() => (
+  .add('Default', withInfo('Use a dropdown button when an action is to be chosen from multiple options.')(() => (
     <div>
       <DropdownButton
         bsStyle="secondary"
@@ -166,7 +166,7 @@ storiesOf('Dropdown Button', module)
     </div>
   )))
 
-  .add('Disabled Dropdown', withInfo('')(() => (
+  .add('Disabled Dropdown', withInfo('Keep a dropdown button disabled if its actions can’t yet be performed. For example, while selecting releases to be merged, disable the merge button until releases are selected.')(() => (
     <div>
       <DropdownButton
         bsStyle="secondary"
@@ -177,7 +177,7 @@ storiesOf('Dropdown Button', module)
   )));
 
 storiesOf('Label', module)
-  .add('Default', withInfo('')(() => (
+  .add('Default', withInfo('Labels can be used with items that need to be labeled, categorized, or organized using keywords that describe them.')(() => (
     <div>
       <Label bsStyle="default">{'Default'}</Label>{' '}
       <Label bsStyle="primary">{'Primary'}</Label>{' '}
@@ -205,7 +205,7 @@ storiesOf('Glyphicon', module)
     </div>)));
 
 storiesOf('Modal', module)
-  .add('Default', withInfo('')(() => (
+  .add('Default', withInfo('Modals are overlays over the primary application. They help communicate information via a secondary window and allow the user to maintain the context of a particular task. They can be used to get input necessary to make decisions by the system or to display contextual information.')(() => (
     <div>
       <Modal.Dialog>
         <Modal.Header closeButton>
@@ -223,14 +223,14 @@ storiesOf('Modal', module)
   )));
 
 storiesOf('Progress Bar', module)
-  .add('Default', withInfo('')(() => (
+  .add('Default', withInfo('Progress bars help give users immediate feedback. They reduce a user’s uncertainty and give them a reason to wait for an action to complete.')(() => (
     <div>
       <ProgressBar bsStyle="success" now={40} />
     </div>
   )));
 
 storiesOf('Pagination', module)
-  .add('Default', withInfo('')(() => (
+  .add('Default', withInfo('Pagination helps divide the content into discrete buckets and enables the user to navigate efficiently between them.')(() => (
     <div>
       <Pagination>
         <Pagination.First />
@@ -249,7 +249,7 @@ storiesOf('Pagination', module)
       </Pagination>
     </div>
   )))
-  .add('Sizes', withInfo('')(() => {
+  .add('Sizes', withInfo('Use smaller sizes where space is limited. For example, in tables.')(() => {
     const active = 7;
     const items = [];
     for (let number = 1; number <= 10; number++) {
