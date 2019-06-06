@@ -17,3 +17,6 @@ node_modules/
 
 # Remove .DS_Store files on Mac
 .DS_Store
+
+# Storybook
+storybook-static/
