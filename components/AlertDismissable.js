@@ -1,28 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Alert} from 'react-bootstrap';
 
-class AlertDismissable extends React.Component {
-  constructor(props, context) {
-    super(props, context);
+export default function AlertDismissable(props) {
+  const [open, setOpen] = useState(true);
 
-    this.handleClose = this.handleClose.bind(this);
-
-    this.state = {
-      show: true,
-    };
+  function onClose() {
+    setOpen(false);
   }
 
-  handleClose() {
-    this.setState({show: false});
-  }
-
-  render() {
-    return this.state.show ? (
-      <Alert dismissible onClose={this.handleClose} variant={this.props.variant}>
-        {this.props.children}
-      </Alert>
-    ) : null;
-  }
+  return open ? (
+    <Alert dismissible onClose={onClose} variant={props.variant}>
+      {props.children}
+    </Alert>
+  ) : null;
 }
-
-export default AlertDismissable;
