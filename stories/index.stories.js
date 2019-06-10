@@ -19,7 +19,7 @@ import {
   Tooltip,
 } from '../components';
 
-import '../scss/custom.scss';
+import '../scss/bootstrap-storybook.scss';
 
 const margins = {
   margin: '3em 2em 3em 3em',
