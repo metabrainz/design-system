@@ -1,5 +1,5 @@
 import React from 'react';
-import {ButtonGroup, MenuItem, OverlayTrigger} from 'react-bootstrap';
+import {ButtonGroup, OverlayTrigger} from 'react-bootstrap';
 import {storiesOf, addDecorator} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
 import {linkTo} from '@storybook/addon-links';
@@ -10,9 +10,8 @@ import {
   Badge,
   Button,
   Breadcrumb,
+  Dropdown,
   DropdownButton,
-  Label,
-  Glyphicon,
   Modal,
   Pagination,
   ProgressBar,
@@ -20,7 +19,7 @@ import {
   Tooltip,
 } from '../components';
 
-import '../less/styles.less';
+import '../scss/custom.scss';
 
 const margins = {
   margin: '3em 2em 3em 3em',
@@ -36,8 +35,8 @@ addDecorator(MarginDecorator);
 storiesOf('Welcome', module)
   .add('Hey there 👋', withInfo('')(() => (
     <div>
-      <h2 style={{color: '#eb743b'}}>{'MusicBrainz UI Library'}</h2>
-      <p style={{marginBottom: '1em', marginTop: '1em', maxWidth: '40vw'}}>
+      <h2>{'MusicBrainz UI Library'}</h2>
+      <p>
         {'This storybook is around to help you find your way around our UI components. We hope it will help us maintain a scalable and consistent visual system for UI development. Look around and feel free to reach out to us on IRC #metabrainz to talk about it! 😀'}
       </p>
       <p><strong>{'Some quick links:'}</strong></p>
@@ -51,7 +50,7 @@ storiesOf('Welcome', module)
 storiesOf('Alert', module)
   .add('Danger Alert', withInfo('Danger alerts should be used when the system has failed to perform an action, or when the user has made an error.')(() => (
     <div>
-      <AlertDismissable bsStyle="danger">
+      <AlertDismissable variant="danger">
         <p>{'You just deleted the entity. The changes will now be voted on. Click '}<a className="alert-link">{'here'}</a> {'to know more!'}</p>
       </AlertDismissable>
     </div>
@@ -59,7 +58,7 @@ storiesOf('Alert', module)
 
   .add('Info Alert', withInfo('Info alerts should be used when there are tips or information that a user can benefit from.')(() => (
     <div>
-      <AlertDismissable bsStyle="info">
+      <AlertDismissable variant="info">
         <p>{'Hmm, you cannot edit it. Permissions to delete this entity are only granted to privileged editors. Click'} <a className="alert-link">{'here'}</a> {'to know more!'} </p>
       </AlertDismissable>
     </div>
@@ -67,7 +66,7 @@ storiesOf('Alert', module)
 
   .add('Warning Alert', withInfo('Warning alerts should be used when an action is out of the ordinary or might not be desired.')(() => (
     <div>
-      <AlertDismissable bsStyle="warning">
+      <AlertDismissable variant="warning">
         <p>{'We think your browser might be outdated. Better check that one out before proceeding!'}</p>
       </AlertDismissable>
     </div>
@@ -75,7 +74,7 @@ storiesOf('Alert', module)
 
   .add('Success Alert', withInfo('Success alerts should be used when an action was performed successfully.')(() => (
     <div>
-      <AlertDismissable bsStyle="success">
+      <AlertDismissable variant="success">
         <p>{'Your tag has been successfully added. Do vote on other relevant tags as well!'}</p>
       </AlertDismissable>
     </div>
@@ -84,7 +83,7 @@ storiesOf('Alert', module)
 storiesOf('Badge', module)
   .add('Default', withInfo('Badges stand out to inform the user that there is something special that warrants their attention. For example, open edits.')(() => (
     <div>
-      {'Open Edits'} <Badge>{'42'}</Badge>
+      {'Open Edits'} <Badge variant="primary">{'42'}</Badge>
     </div>
   )));
 
@@ -102,74 +101,67 @@ storiesOf('Breadcrumb', module)
 storiesOf('Buttons', module)
   .add('Primary Button', withInfo('Buttons set an action in motion. Instead of using “Yes” or “Okay”, it’s better to use verbs that explain what the triggered action will be. For example, “Create new”, “Discard draft”, etc. Use the primary button when it’s the main action on a page/table. Use the smaller one in case of limited space.')(() => (
     <div>
-      <Button bsStyle="primary" onClick={action('clicked')}>{'Primary Button'}</Button>
-      <Button bsSize="small" bsStyle="primary" onClick={action('clicked')}>{'Primary Small Button'}</Button>
+      <Button onClick={action('clicked')} variant="primary">{'Primary Button'}</Button>
+      <Button onClick={action('clicked')} size="sm" variant="primary">{'Primary Small Button'}</Button>
     </div>
   )))
 
-  .add('Default Button', withInfo('Default buttons are used for secondary actions. They’re usually paired with a primary button to provide an alternate choice.')(() => (
+  .add('Secondary Button', withInfo('Secondary buttons are used for secondary actions. They’re usually paired with a primary button to provide an alternate choice.')(() => (
     <div>
-      <Button bsStyle="default" onClick={action('clicked')}>{'Default Button'}</Button>
-      <Button bsSize="small" bsStyle="default" onClick={action('clicked')}>{'Default Small Button'}</Button>
+      <Button onClick={action('clicked')} variant="secondary">{'Secondary Button'}</Button>
+      <Button onClick={action('clicked')} size="sm" variant="secondary">{'Secondary Small Button'}</Button>
     </div>
   )))
 
   .add('Ghost Button', withInfo('Use ghost buttons to reduce visual clutter on the screen. Take care that the actions via a ghost button are not primary actions.')(() => (
     <div>
-      <Button bsStyle="secondary" onClick={action('clicked')}>{'Ghost Button'}</Button>
-      <Button bsSize="small" bsStyle="secondary" onClick={action('clicked')}>{'Small ghost Button'}</Button>
+      <Button onClick={action('clicked')} variant="outline-primary">{'Ghost Button'}</Button>
+      <Button onClick={action('clicked')} size="sm" variant="outline-primary">{'Small Ghost Button'}</Button>
     </div>
   )))
 
   .add('Warning Button', withInfo('Just when you need to nudge the user’s attention to make sure they know it’s not another ordinary action, use the warning button.')(() => (
     <div>
-      <Button bsStyle="warning" onClick={action('clicked')}>{'Warning Button'}</Button>
-      <Button bsSize="small" bsStyle="warning" onClick={action('clicked')}>{'Warning Small Button'}</Button>
+      <Button onClick={action('clicked')} variant="warning">{'Warning Button'}</Button>
+      <Button onClick={action('clicked')} size="sm" variant="warning">{'Warning Small Button'}</Button>
     </div>
   )))
 
   .add('Danger Button', withInfo('When the primary action is “negative” or irreversible, make use of the danger button to warn the user. For example, “Delete”, “Erase”, “Discard”, “Remove”, etc.')(() => (
     <div>
-      <Button bsStyle="danger" onClick={action('clicked')}>{'Danger Button'}</Button>
-      <Button bsSize="small" bsStyle="danger" onClick={action('clicked')}>{'Danger Small Button'}</Button>
+      <Button onClick={action('clicked')} variant="danger">{'Danger Button'}</Button>
+      <Button onClick={action('clicked')} size="sm" variant="danger">{'Danger Small Button'}</Button>
     </div>
   )))
 
   .add('Success Button', withInfo('The “Yay, you did it!” button. Use them for highlighting “positive” actions like “Submit”.')(() => (
     <div>
-      <Button bsStyle="success" onClick={action('clicked')}>{'Success Button'}</Button>
-      <Button bsSize="small" bsStyle="success" onClick={action('clicked')}>{'Success Small Button'}</Button>
+      <Button onClick={action('clicked')} variant="success">{'Success Button'}</Button>
+      <Button onClick={action('clicked')} size="sm" variant="success">{'Success Small Button'}</Button>
     </div>
   )))
 
   .add('Set of Buttons', withInfo('To make clear a distinction between two options, sometimes it’s better to use different visual weights for buttons.')(() => (
     <div>
-      <Button bsStyle="default" onClick={action('clicked')}>{'Secondary Button'}</Button>
-      <Button bsStyle="primary" onClick={action('clicked')}>{'Primary Button'}</Button>
-    </div>
-  )))
-
-  .add('Links', withInfo('Links are typically used as a means of navigation either within the application, to a place outside, or to a resource. For anything else, especially things that change data, you should be using a button.')(() => (
-    <div>
-      <Button bsStyle="link" onClick={action('clicked')}>{'I am a default link'}</Button>
-      <Button bsSize="xsmall" bsStyle="link" onClick={action('clicked')}>{'I am a small link'}</Button>
+      <Button onClick={action('clicked')} variant="secondary">{'Secondary Button'}</Button>
+      <Button onClick={action('clicked')} variant="primary">{'Primary Button'}</Button>
     </div>
   )));
 
 storiesOf('Dropdown Button', module)
-  .add('Default', withInfo('Use a dropdown button when an action is to be chosen from multiple options.')(() => (
+  .add('Primary Dropdown', withInfo('Use a dropdown button when an action is to be chosen from multiple options.')(() => (
     <div>
       <DropdownButton
-        bsStyle="secondary"
         title="Actions"
+        variant="primary"
       >
-        <MenuItem eventKey="1">{'Merge'}</MenuItem>
-        <MenuItem eventKey="2">{'Delete'}</MenuItem>
-        <MenuItem active eventKey="3">
+        <Dropdown.Item eventKey="1">{'Merge'}</Dropdown.Item>
+        <Dropdown.Item eventKey="2">{'Delete'}</Dropdown.Item>
+        <Dropdown.Item active eventKey="3">
           {'Add ISRC Code'}
-        </MenuItem>
-        <MenuItem divider />
-        <MenuItem eventKey="4">{'Let it be'}</MenuItem>
+        </Dropdown.Item>
+        <Dropdown.Item divider />
+        <Dropdown.Item eventKey="4">{'Let it be'}</Dropdown.Item>
       </DropdownButton>
     </div>
   )))
@@ -177,40 +169,12 @@ storiesOf('Dropdown Button', module)
   .add('Disabled Dropdown', withInfo('Keep a dropdown button disabled if its actions can’t yet be performed. For example, while selecting releases to be merged, disable the merge button until releases are selected.')(() => (
     <div>
       <DropdownButton
-        bsStyle="secondary"
         disabled
         title="Actions"
+        variant="primary"
       />
     </div>
   )));
-
-storiesOf('Label', module)
-  .add('Default', withInfo('Labels can be used with items that need to be labeled, categorized, or organized using keywords that describe them.')(() => (
-    <div>
-      <Label bsStyle="default">{'Default'}</Label>{' '}
-      <Label bsStyle="primary">{'Primary'}</Label>{' '}
-      <Label bsStyle="success">{'Success'}</Label> <Label bsStyle="info">{'Info'}</Label>{' '}
-      <Label bsStyle="warning">{'Warning'}</Label>{' '}
-      <Label bsStyle="danger">{'Danger'}</Label>
-    </div>
-  )));
-
-storiesOf('Glyphicon', module)
-  .add('With text', withInfo('')(() => (
-    <div>
-      <Button bsSize="small" bsStyle="primary">
-        <Glyphicon glyph="plus " />
-        {'Add a Release'}
-      </Button>
-    </div>)))
-
-
-  .add('Without text', withInfo('')(() => (
-    <div>
-      <Button bsSize="small" bsStyle="secondary">
-        <Glyphicon glyph="align-center " />
-      </Button>
-    </div>)));
 
 storiesOf('Modal', module)
   .add('Default', withInfo('Modals are overlays over the primary application. They help communicate information via a secondary window and allow the user to maintain the context of a particular task. They can be used to get input necessary to make decisions by the system or to display contextual information.')(() => (
@@ -223,8 +187,8 @@ storiesOf('Modal', module)
         <Modal.Body>{'One fine body...'}</Modal.Body>
 
         <Modal.Footer>
-          <Button bsStyle="link">{'Close'}</Button>
-          <Button bsStyle="primary">{'Save changes'}</Button>
+          <Button variant="secondary">{'Close'}</Button>
+          <Button variant="primary">{'Save changes'}</Button>
         </Modal.Footer>
       </Modal.Dialog>
     </div>
@@ -233,7 +197,7 @@ storiesOf('Modal', module)
 storiesOf('Progress Bar', module)
   .add('Default', withInfo('Progress bars help give users immediate feedback. They reduce a user’s uncertainty and give them a reason to wait for an action to complete.')(() => (
     <div>
-      <ProgressBar bsStyle="success" now={40} />
+      <ProgressBar now={40} variant="success" />
     </div>
   )));
 
@@ -269,9 +233,9 @@ storiesOf('Pagination', module)
     }
     return (
       <div>
-        <Pagination bsSize="medium">{items}</Pagination>
+        <Pagination size="medium">{items}</Pagination>
         <br />
-        <Pagination bsSize="small">{items}</Pagination>
+        <Pagination size="sm">{items}</Pagination>
       </div>
     );
   }));
@@ -320,41 +284,15 @@ storiesOf('Tooltip', module)
       <OverlayTrigger
         overlay={
           <Tooltip id="tooltip">
-            <strong>{'New!'}</strong> {'Now add a release directly from here.'}
+            <strong>{'New!'}</strong>
+            {' Now add a release directly from here.'}
           </Tooltip>
         }
         placement="bottom"
       >
-        <Button bsSize="small" bsStyle="primary">
-          <Glyphicon glyph="plus " />
-          {'  Add a Release'}
+        <Button size="sm" variant="primary">
+          {'Add a Release'}
         </Button>
       </OverlayTrigger>
-    </div>
-  )))
-  .add('Placements', withInfo('')(() => (
-    <div>
-      <Tooltip className="in" id="tooltip-right" placement="right">
-        {'Tooltip right'}
-      </Tooltip>
-      <br />
-      <br />
-
-
-      <Tooltip className="in" id="tooltip-top" placement="top">
-        {'Tooltip top'}
-      </Tooltip>
-      <br />
-      <br />
-
-      <Tooltip className="in" id="tooltip-left" placement="left">
-        {'Tooltip left'}
-      </Tooltip>
-      <br />
-      <br />
-
-      <Tooltip className="in" id="tooltip-bottom" placement="bottom">
-        {'Tooltip bottom'}
-      </Tooltip>
     </div>
   )));

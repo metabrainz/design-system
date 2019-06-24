@@ -4,8 +4,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.less$/,
-        loaders: ["style-loader", "css-loader", "less-loader"],
+        test: /\.scss$/,
+        loaders: ["style-loader", "css-loader", "sass-loader"],
         include: path.resolve(__dirname, "../")
       },
       {
