@@ -5,3 +5,12 @@
 .modal-content {
     border-top: 0.25rem $orange solid;
 }
+
+.navbar-nav {
+  .nav-link {
+    @include hover-focus {
+      background-color: $orange;
+      color: $white;
+    }
+  }
+}

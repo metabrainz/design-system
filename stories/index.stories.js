@@ -208,7 +208,7 @@ storiesOf('Modal', module)
 
 storiesOf('Navbar', module)
   .add('Default', withInfo('')(() => (
-    <Navbar expand="lg">
+    <Navbar expand="lg" variant="">
       <Navbar.Brand href="#">{'MusicBrainz'}</Navbar.Brand>
       <Navbar.Toggle aria-controls="mb-navbar-nav" />
       <Navbar.Collapse id="mb-navbar-nav">
