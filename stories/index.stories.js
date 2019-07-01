@@ -1,5 +1,13 @@
 import React from 'react';
-import {ButtonGroup, OverlayTrigger} from 'react-bootstrap';
+import {
+  ButtonGroup,
+  Form,
+  FormControl,
+  Nav,
+  Navbar,
+  NavDropdown,
+  OverlayTrigger,
+} from 'react-bootstrap';
 import {storiesOf, addDecorator} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
 import {linkTo} from '@storybook/addon-links';
@@ -20,6 +28,10 @@ import {
 } from '../components';
 
 import '../scss/bootstrap-storybook.scss';
+
+function noop(event) {
+  event.preventDefault();
+}
 
 const margins = {
   margin: '3em 2em 3em 3em',
@@ -192,6 +204,44 @@ storiesOf('Modal', module)
         </Modal.Footer>
       </Modal.Dialog>
     </div>
+  )));
+
+storiesOf('Navbar', module)
+  .add('Default', withInfo('')(() => (
+    <Navbar expand="lg">
+      <Navbar.Brand href="#">{'MusicBrainz'}</Navbar.Brand>
+      <Navbar.Toggle aria-controls="mb-navbar-nav" />
+      <Navbar.Collapse id="mb-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link href="#login" onClick={noop}>{'Login'}</Nav.Link>
+          <Nav.Link href="#register" onClick={noop}>{'Register'}</Nav.Link>
+          <NavDropdown id="mb-nav-dropdown" title="About Us">
+            <NavDropdown.Item href="#about" onClick={noop}>
+              {'About MusicBrainz'}
+            </NavDropdown.Item>
+            <NavDropdown.Item href="#sponsors" onClick={noop}>
+              {'Sponsors'}
+            </NavDropdown.Item>
+            <NavDropdown.Item href="#team" onClick={noop}>
+              {'Team'}
+            </NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item href="#licenses" onClick={noop}>
+              {'Data Licenses'}
+            </NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
+        <Form inline>
+          <FormControl className="mr-sm-2" placeholder="Search" type="text" />
+          <FormControl as="select" className="custom-select">
+            <option>{'Artist'}</option>
+            <option>{'Recording'}</option>
+            <option>{'Work'}</option>
+          </FormControl>
+          <Button variant="outline-success">{'Search'}</Button>
+        </Form>
+      </Navbar.Collapse>
+    </Navbar>
   )));
 
 storiesOf('Progress Bar', module)
