@@ -232,7 +232,7 @@ storiesOf('Navbar', module)
           </NavDropdown>
         </Nav>
         <Form inline>
-          <FormControl className="mr-sm-2" placeholder="Search" type="text" />
+          <FormControl placeholder="Search" type="text" />
           <FormControl as="select" className="custom-select">
             <option>{'Artist'}</option>
             <option>{'Recording'}</option>

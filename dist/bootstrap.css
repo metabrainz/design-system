@@ -5410,8 +5410,5 @@
 .bs .breadcrumb-item.active span.active {
   font-weight: 700; }
 
-.bs .btn {
-  margin: 0.25rem; }
-
 .bs .modal-content {
   border-top: 0.25rem #eb743b solid; }
