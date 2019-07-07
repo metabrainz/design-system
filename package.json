@@ -40,19 +40,12 @@
     "node-sass": "^4.12.0",
     "postcss": "7.0.17",
     "postcss-cli": "6.1.2",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.21.0",
-    "url-loader": "^1.0.1"
-  },
-  "peerDependencies": {
-    "react": "^16.8.6",
-    "react-bootstrap": "^1.0.0-beta.9",
-    "react-dom": "^16.8.6"
-  },
-  "dependencies": {
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.9",
     "react-bootstrap-table-next": "^0.1.15",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1"
   }
 }
