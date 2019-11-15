@@ -1,4 +1,5 @@
 $blue:      #4e7ec2;
+$gray-400:  #ced4da;
 $gray-500:  #adb5bd;
 $green:     #68B360;
 $orange:    #eb743b;
@@ -28,8 +29,21 @@ $btn-border-radius:         0;
 $btn-border-radius-lg:      0;
 $btn-border-radius-sm:      0;
 
+$dropdown-border-color:     $orange;
+$dropdown-border-width:     1px;
+$dropdown-divider-bg:       $gray-400;
+$dropdown-divider-margin-y: 0;
+$dropdown-item-padding-x:   1rem;
+$dropdown-item-padding-y:   0.5rem;
+$dropdown-link-hover-bg:    lighten($orange, 30%);
+$dropdown-padding-y:        0;
+
 $modal-content-border-radius:   0;
 $modal-header-border-width:     0;
 $modal-footer-border-width:     0;
+
+$nav-link-padding-y:    0.75rem;
+
+$navbar-nav-link-padding-x:     1rem;
 
 $pagination-disabled-color:     $gray-500;

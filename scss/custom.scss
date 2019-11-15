@@ -8,9 +8,10 @@
 
 .navbar-nav {
   .nav-link {
-    @include hover-focus {
+    &:hover, &:focus, &[aria-expanded="true"] {
       background-color: $orange;
       color: $white;
     }
+    font-weight: $font-weight-bold;
   }
 }
