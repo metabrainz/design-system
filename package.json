@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "dist": "node-sass scss/bootstrap-prod.scss | postcss --use autoprefixer --no-map > dist/bootstrap.css",
+    "dist": "node-sass scss/bootstrap-prod.scss | tee | postcss --use autoprefixer --no-map > dist/bootstrap.css",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
