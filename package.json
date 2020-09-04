@@ -39,7 +39,7 @@
     "eslint-plugin-react": "7.8.2",
     "file-loader": "^1.1.11",
     "jquery": "^3.4.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "popper.js": "^1.14.7",
     "postcss": "7.0.17",
     "postcss-cli": "6.1.2",
