@@ -2,7 +2,7 @@
   "name": "design-system",
   "version": "1.0.0",
   "description": "Design system of MB",
-  "main": "projects/shared-components/index.js",
+  "main": "components/shared/index.js",
   "directories": {
     "doc": "docs"
   },
