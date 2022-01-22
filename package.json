@@ -1,8 +1,8 @@
 {
   "name": "design-system",
   "version": "1.0.0",
-  "description": "Design system of MB",
-  "main": "components/shared/index.js",
+  "description": "Design system of MetaBrainz",
+  "main": "components/index.js",
   "directories": {
     "doc": "docs"
   },
