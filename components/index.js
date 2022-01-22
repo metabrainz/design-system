@@ -1,14 +1,14 @@
-import AlertDismissable from './AlertDismissable';
-import Badge from './Badge';
-import Breadcrumb from './Breadcrumb';
-import Button from './Button';
-import Dropdown from './Dropdown';
-import DropdownButton from './DropdownButton';
-import Modal from './Modal';
-import Pagination from './Pagination';
-import ProgressBar from './ProgressBar';
-import Table from './Table';
-import Tooltip from './Tooltip';
+import AlertDismissable from './shared/AlertDismissable';
+import Badge from './shared/Badge';
+import Breadcrumb from './shared/Breadcrumb';
+import Button from './shared/Button';
+import Dropdown from './shared/Dropdown';
+import DropdownButton from './shared/DropdownButton';
+import Modal from './shared/Modal';
+import Pagination from './shared/Pagination';
+import ProgressBar from './shared/ProgressBar';
+import Table from './shared/Table';
+import Tooltip from './shared/Tooltip';
 
 export {
   AlertDismissable,
