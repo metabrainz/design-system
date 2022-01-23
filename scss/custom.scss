@@ -1,5 +1,5 @@
 .breadcrumb-item.active span.active {
-    font-weight: 700;
+    font-weight: $font-weight-bold;
 }
 
 .modal-content {
@@ -12,6 +12,6 @@
       background-color: $orange;
       color: $white;
     }
-    font-weight: 700;
+    font-weight: $font-weight-bold;
   }
 }
