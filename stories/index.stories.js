@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  ButtonGroup,
   Form,
   FormControl,
   Nav,
@@ -10,8 +9,6 @@ import {
 } from 'react-bootstrap';
 import {storiesOf, addDecorator} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
-import {linkTo} from '@storybook/addon-links';
-import {withInfo} from '@storybook/addon-info';
 
 import {
   AlertDismissable,
@@ -45,62 +42,73 @@ addDecorator(MarginDecorator);
 
 // Stories of components
 storiesOf('Welcome', module)
-  .add('Hey there 👋', withInfo('')(() => (
+  .add('Hey there 👋', () => (
     <div>
-      <h2>{'MusicBrainz UI Library'}</h2>
+      <h2>{'MetaBrainz UI Library'}</h2>
       <p>
         {'This storybook is around to help you find your way around our UI components. We hope it will help us maintain a scalable and consistent visual system for UI development. Look around and feel free to reach out to us on IRC #metabrainz to talk about it! 😀'}
       </p>
       <p><strong>{'Some quick links:'}</strong></p>
-      <li><a href="https://musicbrainz.org/">{'MusicBrainz'}</a></li>
+      <li><a href="https://metabrainz.org/">{'MetaBrainz'}</a></li>
       <li><a href="https://github.com/metabrainz/design-system">{'GitHub Repo'}</a></li>
-      <li><a href="http://tickets.musicbrainz.org/">{'Bug Tracker'}</a></li>
+      <li><a href="https://tickets.musicbrainz.org/">{'Bug Tracker'}</a></li>
       <li><a href="https://twitter.com/MusicBrainz">{'Twitter'}</a></li>
     </div>
-  )));
+  ));
 
 storiesOf('Alert', module)
-  .add('Danger Alert', withInfo('Danger alerts should be used when the system has failed to perform an action, or when the user has made an error.')(() => (
+  .add('Danger Alert', () => (
     <div>
       <AlertDismissable variant="danger">
         <p>{'You just deleted the entity. The changes will now be voted on. Click '}<a className="alert-link">{'here'}</a> {'to know more!'}</p>
       </AlertDismissable>
     </div>
-  )))
+  ),
+  {
+    info: 'Danger alerts should be used when the system has failed to perform an action, or when the user has made an error.',
+  })
 
-  .add('Info Alert', withInfo('Info alerts should be used when there are tips or information that a user can benefit from.')(() => (
+  .add('Info Alert', () => (
     <div>
       <AlertDismissable variant="info">
         <p>{'Hmm, you cannot edit it. Permissions to delete this entity are only granted to privileged editors. Click'} <a className="alert-link">{'here'}</a> {'to know more!'} </p>
       </AlertDismissable>
     </div>
-  )))
+  ), {
+    info: 'Info alerts should be used when there are tips or information that a user can benefit from.',
+  })
 
-  .add('Warning Alert', withInfo('Warning alerts should be used when an action is out of the ordinary or might not be desired.')(() => (
+  .add('Warning Alert', () => (
     <div>
       <AlertDismissable variant="warning">
         <p>{'We think your browser might be outdated. Better check that one out before proceeding!'}</p>
       </AlertDismissable>
     </div>
-  )))
+  ), {
+    info: 'Warning alerts should be used when an action is out of the ordinary or might not be desired.',
+  })
 
-  .add('Success Alert', withInfo('Success alerts should be used when an action was performed successfully.')(() => (
+  .add('Success Alert', () => (
     <div>
       <AlertDismissable variant="success">
         <p>{'Your tag has been successfully added. Do vote on other relevant tags as well!'}</p>
       </AlertDismissable>
     </div>
-  )));
+  ), {
+    info: 'Success alerts should be used when an action was performed successfully.',
+  });
 
 storiesOf('Badge', module)
-  .add('Default', withInfo('Badges stand out to inform the user that there is something special that warrants their attention. For example, open edits.')(() => (
+  .add('Default', () => (
     <div>
       {'Open Edits'} <Badge variant="primary">{'42'}</Badge>
     </div>
-  )));
+  ), {
+    info: 'Badges stand out to inform the user that there is something special that warrants their attention. For example, open edits.',
+  });
 
 storiesOf('Breadcrumb', module)
-  .add('Default', withInfo('Breadcrumbs help users figure out “Where am I exactly?” rather quickly. All links in a breadcrumb should be clickable except the current. Reloading the current page again would be quite confusing.')(() => (
+  .add('Default', () => (
     <div>
       <Breadcrumb>
         <Breadcrumb.Item href="#">{'Release Group'}</Breadcrumb.Item>
@@ -108,60 +116,76 @@ storiesOf('Breadcrumb', module)
         <Breadcrumb.Item active>{'Track'}</Breadcrumb.Item>
       </Breadcrumb>
     </div>
-  )));
+  ), {
+    info: 'Breadcrumbs help users figure out “Where am I exactly?” rather quickly. All links in a breadcrumb should be clickable except the current. Reloading the current page again would be quite confusing.',
+  });
 
 storiesOf('Buttons', module)
-  .add('Primary Button', withInfo('Buttons set an action in motion. Instead of using “Yes” or “Okay”, it’s better to use verbs that explain what the triggered action will be. For example, “Create new”, “Discard draft”, etc. Use the primary button when it’s the main action on a page/table. Use the smaller one in case of limited space.')(() => (
+  .add('Primary Button', () => (
     <div>
       <Button onClick={action('clicked')} variant="primary">{'Primary Button'}</Button>
       <Button onClick={action('clicked')} size="sm" variant="primary">{'Primary Small Button'}</Button>
     </div>
-  )))
+  ), {
+    info: 'Buttons set an action in motion. Instead of using “Yes” or “Okay”, it’s better to use verbs that explain what the triggered action will be. For example, “Create new”, “Discard draft”, etc. Use the primary button when it’s the main action on a page/table. Use the smaller one in case of limited space.',
+  })
 
-  .add('Secondary Button', withInfo('Secondary buttons are used for secondary actions. They’re usually paired with a primary button to provide an alternate choice.')(() => (
+  .add('Secondary Button', () => (
     <div>
       <Button onClick={action('clicked')} variant="secondary">{'Secondary Button'}</Button>
       <Button onClick={action('clicked')} size="sm" variant="secondary">{'Secondary Small Button'}</Button>
     </div>
-  )))
+  ), {
+    info: 'Secondary buttons are used for secondary actions. They’re usually paired with a primary button to provide an alternate choice.',
+  })
 
-  .add('Ghost Button', withInfo('Use ghost buttons to reduce visual clutter on the screen. Take care that the actions via a ghost button are not primary actions.')(() => (
+  .add('Ghost Button', () => (
     <div>
       <Button onClick={action('clicked')} variant="outline-primary">{'Ghost Button'}</Button>
       <Button onClick={action('clicked')} size="sm" variant="outline-primary">{'Small Ghost Button'}</Button>
     </div>
-  )))
+  ), {
+    info: 'Use ghost buttons to reduce visual clutter on the screen. Take care that the actions via a ghost button are not primary actions.',
+  })
 
-  .add('Warning Button', withInfo('Just when you need to nudge the user’s attention to make sure they know it’s not another ordinary action, use the warning button.')(() => (
+  .add('Warning Button', () => (
     <div>
       <Button onClick={action('clicked')} variant="warning">{'Warning Button'}</Button>
       <Button onClick={action('clicked')} size="sm" variant="warning">{'Warning Small Button'}</Button>
     </div>
-  )))
+  ), {
+    info: 'Just when you need to nudge the user’s attention to make sure they know it’s not another ordinary action, use the warning button.',
+  })
 
-  .add('Danger Button', withInfo('When the primary action is “negative” or irreversible, make use of the danger button to warn the user. For example, “Delete”, “Erase”, “Discard”, “Remove”, etc.')(() => (
+  .add('Danger Button', () => (
     <div>
       <Button onClick={action('clicked')} variant="danger">{'Danger Button'}</Button>
       <Button onClick={action('clicked')} size="sm" variant="danger">{'Danger Small Button'}</Button>
     </div>
-  )))
+  ), {
+    info: 'When the primary action is “negative” or irreversible, make use of the danger button to warn the user. For example, “Delete”, “Erase”, “Discard”, “Remove”, etc.',
+  })
 
-  .add('Success Button', withInfo('The “Yay, you did it!” button. Use them for highlighting “positive” actions like “Submit”.')(() => (
+  .add('Success Button', () => (
     <div>
       <Button onClick={action('clicked')} variant="success">{'Success Button'}</Button>
       <Button onClick={action('clicked')} size="sm" variant="success">{'Success Small Button'}</Button>
     </div>
-  )))
+  ), {
+    info: 'The “Yay, you did it!” button. Use them for highlighting “positive” actions like “Submit”.',
+  })
 
-  .add('Set of Buttons', withInfo('To make clear a distinction between two options, sometimes it’s better to use different visual weights for buttons.')(() => (
+  .add('Set of Buttons', () => (
     <div>
       <Button onClick={action('clicked')} variant="secondary">{'Secondary Button'}</Button>
       <Button onClick={action('clicked')} variant="primary">{'Primary Button'}</Button>
     </div>
-  )));
+  ), {
+    info: 'To make clear a distinction between two options, sometimes it’s better to use different visual weights for buttons.',
+  });
 
 storiesOf('Dropdown Button', module)
-  .add('Primary Dropdown', withInfo('Use a dropdown button when an action is to be chosen from multiple options.')(() => (
+  .add('Primary Dropdown', () => (
     <div>
       <DropdownButton
         title="Actions"
@@ -176,9 +200,11 @@ storiesOf('Dropdown Button', module)
         <Dropdown.Item eventKey="4">{'Let it be'}</Dropdown.Item>
       </DropdownButton>
     </div>
-  )))
+  ), {
+    info: 'Use a dropdown button when an action is to be chosen from multiple options.',
+  })
 
-  .add('Disabled Dropdown', withInfo('Keep a dropdown button disabled if its actions can’t yet be performed. For example, while selecting releases to be merged, disable the merge button until releases are selected.')(() => (
+  .add('Disabled Dropdown', () => (
     <div>
       <DropdownButton
         disabled
@@ -186,10 +212,12 @@ storiesOf('Dropdown Button', module)
         variant="primary"
       />
     </div>
-  )));
+  ), {
+    info: 'Keep a dropdown button disabled if its actions can’t yet be performed. For example, while selecting releases to be merged, disable the merge button until releases are selected.',
+  });
 
 storiesOf('Modal', module)
-  .add('Default', withInfo('Modals are overlays over the primary application. They help communicate information via a secondary window and allow the user to maintain the context of a particular task. They can be used to get input necessary to make decisions by the system or to display contextual information.')(() => (
+  .add('Default', () => (
     <div>
       <Modal.Dialog>
         <Modal.Header closeButton>
@@ -204,10 +232,12 @@ storiesOf('Modal', module)
         </Modal.Footer>
       </Modal.Dialog>
     </div>
-  )));
+  ), {
+    info: 'Modals are overlays over the primary application. They help communicate information via a secondary window and allow the user to maintain the context of a particular task. They can be used to get input necessary to make decisions by the system or to display contextual information.',
+  });
 
 storiesOf('Navbar', module)
-  .add('Default', withInfo('')(() => (
+  .add('Default', () => (
     <Navbar expand="lg" variant="">
       <Navbar.Brand href="#">{'MusicBrainz'}</Navbar.Brand>
       <Navbar.Toggle aria-controls="mb-navbar-nav" />
@@ -242,17 +272,19 @@ storiesOf('Navbar', module)
         </Form>
       </Navbar.Collapse>
     </Navbar>
-  )));
+  ));
 
 storiesOf('Progress Bar', module)
-  .add('Default', withInfo('Progress bars help give users immediate feedback. They reduce a user’s uncertainty and give them a reason to wait for an action to complete.')(() => (
+  .add('Default', () => (
     <div>
       <ProgressBar now={40} variant="success" />
     </div>
-  )));
+  ), {
+    info: 'Progress bars help give users immediate feedback. They reduce a user’s uncertainty and give them a reason to wait for an action to complete.',
+  });
 
 storiesOf('Pagination', module)
-  .add('Default', withInfo('Pagination helps divide the content into discrete buckets and enables the user to navigate efficiently between them.')(() => (
+  .add('Default', () => (
     <div>
       <Pagination>
         <Pagination.First />
@@ -270,8 +302,10 @@ storiesOf('Pagination', module)
         <Pagination.Last />
       </Pagination>
     </div>
-  )))
-  .add('Sizes', withInfo('Use smaller sizes where space is limited. For example, in tables.')(() => {
+  ), {
+    info: 'Pagination helps divide the content into discrete buckets and enables the user to navigate efficiently between them.',
+  })
+  .add('Sizes', () => {
     const active = 7;
     const items = [];
     for (let number = 1; number <= 10; number++) {
@@ -288,10 +322,12 @@ storiesOf('Pagination', module)
         <Pagination size="sm">{items}</Pagination>
       </div>
     );
-  }));
+  }, {
+    info: 'Use smaller sizes where space is limited. For example, in tables.',
+  });
 
 storiesOf('Table', module)
-  .add('Default', withInfo('')(() => {
+  .add('Default', () => {
     const products = [
       {
         id: 1,
@@ -326,12 +362,13 @@ storiesOf('Table', module)
     return (
       <Table columns={columns} data={products} keyField="id" />
     );
-  }));
+  });
 
 storiesOf('Tooltip', module)
-  .add('Default', withInfo('')(() => (
+  .add('Default', () => (
     <div>
       <OverlayTrigger
+        defaultShow
         overlay={
           <Tooltip id="tooltip">
             <strong>{'New!'}</strong>
@@ -345,4 +382,4 @@ storiesOf('Tooltip', module)
         </Button>
       </OverlayTrigger>
     </div>
-  )));
+  ));

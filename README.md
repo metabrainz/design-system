@@ -7,10 +7,10 @@
       
 <p align="center">
   <a href="#about">About</a> •
+  <a href="#guidelines">Guidelines</a> •
   <a href="#contributing">Contributing</a> •
   <a href="#issues">Issues</a> •
-  <a href="#support">Support</a> • 
-  <a href="#guidelines">Guidelines</a> 
+  <a href="#support">Support</a>
 </p>
 
 ---
@@ -18,7 +18,13 @@
 ## About
 
 This design system is a living, breathing document that contains all of the building blocks (React components, colors, icons, layout, etc) of the MetaBrainz projects. It aims to be single source of truth for developers and designers. Still a work in progress, always will be. 
-	    
+
+## Guidelines
+
+- [Design Guidelines](https://github.com/metabrainz/design-system/blob/master/docs/design-guidelines.md)
+- [Components](https://github.com/metabrainz/design-system/blob/master/docs/component-usage.md)
+- [Contributing Guidelines](https://github.com/metabrainz/design-system/blob/master/docs/component-usage.md)
+
 ## Contributing
 	  
 Got **something interesting** you'd like to **ask or share**? Start a discussion at `#metabrainz` IRC channel on libera.chat.
@@ -35,9 +41,4 @@ Reach out to the developers at one of the following places:
 - MetaBrainz Community: https://community.metabrainz.org/
 - Development IRC Channel: `#metabrainz`
 - E-Mail: **support@metabrainz.org**
-
-## Guidelines
-- [Design Guidelines](https://github.com/metabrainz/design-system/blob/master/docs/design-guidelines.md)
-- [Components](https://github.com/metabrainz/design-system/blob/master/docs/component-usage.md)
-- [Contributing Guidelines](https://github.com/metabrainz/design-system/blob/master/docs/component-usage.md)
 
