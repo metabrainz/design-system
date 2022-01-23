@@ -27,8 +27,6 @@ import {
   Tooltip,
 } from '../components';
 
-import '../scss/bootstrap-storybook.scss';
-
 function noop(event) {
   event.preventDefault();
 }
