@@ -10,7 +10,7 @@
   <a href="#guidelines">Guidelines</a> •
   <a href="#contributing">Contributing</a> •
   <a href="#issues">Issues</a> •
-  <a href="#support">Support</a> • 
+  <a href="#support">Support</a>
 </p>
 
 ---
