@@ -45,7 +45,7 @@ addDecorator(MarginDecorator);
 storiesOf('Welcome', module)
   .add('Hey there 👋', withInfo('')(() => (
     <div>
-      <h2>{'MusicBrainz UI Library'}</h2>
+      <h2>{'MetaBrainz UI Library'}</h2>
       <p>
         {'This storybook is around to help you find your way around our UI components. We hope it will help us maintain a scalable and consistent visual system for UI development. Look around and feel free to reach out to us on IRC #metabrainz to talk about it! 😀'}
       </p>
