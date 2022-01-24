@@ -4,12 +4,12 @@
   "description": "Design system of MetaBrainz",
   "main": "components/index.js",
   "directories": {
-    "doc": "docs"
+    "doc": "documents"
   },
   "scripts": {
     "dist": "sass scss/bootstrap-prod.scss | tee | postcss --use autoprefixer --no-map > dist/bootstrap.css",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o docs-build"
   },
   "repository": {
     "type": "git",
