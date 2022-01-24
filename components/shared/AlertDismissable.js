@@ -3,6 +3,7 @@ import {Alert} from 'react-bootstrap';
 
 export default function AlertDismissable(props) {
   const [open, setOpen] = useState(true);
+
   function onClose() {
     setOpen(false);
   }
