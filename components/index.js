@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import AlertDismissable from './shared/AlertDismissable';
 import Badge from './shared/Badge';
 import Breadcrumb from './shared/Breadcrumb';
