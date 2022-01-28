@@ -23,8 +23,9 @@ import {
 
 import '../scss/bootstrap-storybook.scss';
 import Header from '../components/shared/Header';
+import Footer from '../components/shared/Footer';
 
-const searchOptions = ['Artist', 'Release', 'Recording', 'Label', 'Work', 'Release Group', 'Area', 'Place', 'Annotation', 'CD Stub', 'Editor','Tag', 'Instrument', 'Series', 'Event', 'Documentation'];
+const searchOptions = ['Artist', 'Release', 'Recording', 'Label', 'Work', 'Release Group', 'Area', 'Place', 'Annotation', 'CD Stub', 'Editor', 'Tag', 'Instrument', 'Series', 'Event', 'Documentation'];
 
 function noop(event) {
   event.preventDefault();
@@ -241,6 +242,17 @@ storiesOf('Navbar', module)
     <Header
       projectName="musicbrainz"
       searchOptions={searchOptions}
+    />
+  ));
+
+storiesOf('Footer', module)
+  .add('Default', () => (
+    <Footer
+      columnsToShow={4}
+      logo="/img/meb-logos/MusicBrainz.svg"
+      projectDescription="MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public."
+      projectName="musicbrainz"
+      sourceCode="https://github.com/metabrainz/musicbrainz-server"
     />
   ));
 
