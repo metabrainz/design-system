@@ -24,6 +24,8 @@ import {
 import '../scss/bootstrap-storybook.scss';
 import Header from '../components/shared/Header';
 
+const searchOptions = ['Artist', 'Release', 'Recording', 'Label', 'Work', 'Release Group', 'Area', 'Place', 'Annotation', 'CD Stub', 'Editor','Tag', 'Instrument', 'Series', 'Event', 'Documentation'];
+
 function noop(event) {
   event.preventDefault();
 }
@@ -236,7 +238,9 @@ storiesOf('Modal', module)
 
 storiesOf('Navbar', module)
   .add('Default', () => (
-    <Header />
+    <Header
+      searchOptions={searchOptions}
+    />
   ));
 
 storiesOf('Progress Bar', module)

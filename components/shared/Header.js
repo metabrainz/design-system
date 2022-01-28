@@ -23,7 +23,7 @@ export default function Header(props) {
               alt="image"
               className="d-none d-lg-block image"
               height="32"
-              src="/assets/img/meb-mini/musicbrainz.svg"
+              src="/img/meb-mini/musicbrainz.svg"
               width="32"
             />
           </div>
@@ -148,23 +148,13 @@ export default function Header(props) {
 
           <div className="d-none d-lg-block general-margins">
             <select className="form-control" id="typeHeader" name="type">
-              <option>Artist</option>
-              <option>Release</option>
-              <option>Recording</option>
-              <option>Label</option>
-              <option>Work</option>
-              <option>Release Group</option>
-              <option>Area</option>
-              <option>Place</option>
-              <option>Annotation</option>
-              <option>CD Stud</option>
-              <option>Editor</option>
-              <option>Tag</option>
-              <option>Instrument</option>
-              <option>Series</option>
-              <option>Event</option>
-              <option>Documentation</option>
-
+              {
+                props.searchOptions.map((option, i) => (
+                  <option>
+                    {option}
+                  </option>
+                ))
+              }
             </select>
           </div>
           <button className="btn btn-b-n" type="button">
