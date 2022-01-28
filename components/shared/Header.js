@@ -18,24 +18,13 @@ export default function Header(props) {
             <span />
             <span />
           </button>
-          <div className="image-container">
-            <img
-              alt="image"
-              className="d-none d-lg-block image"
-              height="32"
-              src="/img/meb-mini/musicbrainz.svg"
-              width="32"
-            />
-          </div>
-          <a className="navbar-brand text-brand" href="/">
-            <span className="color-purple">
-              Music
-            </span>
-            <span className="color-orange">
-              Brainz
-            </span>
-          </a>
-
+          <img
+            alt="image"
+            className="d-none d-lg-block image"
+            height="60"
+            src="/img/meb-mini/musicbrainz.svg"
+            width="180"
+          />
           <div className="navbar-collapse collapse justify-content-center" id="navbarDefault">
             <ul className="navbar-nav">
               <li className="nav-item dropdown">
