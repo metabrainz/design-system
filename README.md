@@ -21,9 +21,9 @@ This design system is a living, breathing document that contains all of the buil
 
 ## Guidelines
 
-- [Design Guidelines](https://github.com/metabrainz/design-system/blob/master/docs/design-guidelines.md)
-- [Components](https://github.com/metabrainz/design-system/blob/master/docs/component-usage.md)
-- [Contributing Guidelines](https://github.com/metabrainz/design-system/blob/master/docs/component-usage.md)
+- [Design Guidelines](https://github.com/metabrainz/design-system/blob/master/documents/design-guidelines.md)
+- [Components](https://github.com/metabrainz/design-system/blob/master/documents/component-usage.md)
+- [Contributing Guidelines](https://github.com/metabrainz/design-system/blob/master/documents/component-usage.md)
 
 ## Contributing
 	  
