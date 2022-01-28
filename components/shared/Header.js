@@ -22,7 +22,7 @@ export default function Header(props) {
             alt="image"
             className="d-none d-lg-block image"
             height="60"
-            src="/img/meb-mini/musicbrainz.svg"
+            src={'/img/meb-mini/' + props.projectName + '.svg'}
             width="180"
           />
           <div className="navbar-collapse collapse justify-content-center" id="navbarDefault">

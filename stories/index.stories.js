@@ -239,6 +239,7 @@ storiesOf('Modal', module)
 storiesOf('Navbar', module)
   .add('Default', () => (
     <Header
+      projectName="musicbrainz"
       searchOptions={searchOptions}
     />
   ));
