@@ -1,10 +1,7 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
+
 import {
-  Form,
-  FormControl,
-  Nav,
-  Navbar,
-  NavDropdown,
   OverlayTrigger,
 } from 'react-bootstrap';
 import {storiesOf, addDecorator} from '@storybook/react';
@@ -25,6 +22,7 @@ import {
 } from '../components';
 
 import '../scss/bootstrap-storybook.scss';
+import Header from '../components/shared/Header';
 
 function noop(event) {
   event.preventDefault();
@@ -58,15 +56,15 @@ storiesOf('Welcome', module)
 
 storiesOf('Alert', module)
   .add('Danger Alert', () => (
-      <div>
-        <AlertDismissable variant="danger">
-          <p>{'You just deleted the entity. The changes will now be voted on. Click '}<a className="alert-link">{'here'}</a> {'to know more!'}</p>
-        </AlertDismissable>
-      </div>
-    ),
-    {
-      info: 'Danger alerts should be used when the system has failed to perform an action, or when the user has made an error.',
-    })
+    <div>
+      <AlertDismissable variant="danger">
+        <p>{'You just deleted the entity. The changes will now be voted on. Click '}<a className="alert-link">{'here'}</a> {'to know more!'}</p>
+      </AlertDismissable>
+    </div>
+  ),
+  {
+    info: 'Danger alerts should be used when the system has failed to perform an action, or when the user has made an error.',
+  })
 
   .add('Info Alert', () => (
     <div>
@@ -238,40 +236,7 @@ storiesOf('Modal', module)
 
 storiesOf('Navbar', module)
   .add('Default', () => (
-    <Navbar expand="lg" variant="">
-      <Navbar.Brand href="#">{'MusicBrainz'}</Navbar.Brand>
-      <Navbar.Toggle aria-controls="mb-navbar-nav" />
-      <Navbar.Collapse id="mb-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#login" onClick={noop}>{'Login'}</Nav.Link>
-          <Nav.Link href="#register" onClick={noop}>{'Register'}</Nav.Link>
-          <NavDropdown id="mb-nav-dropdown" title="About Us">
-            <NavDropdown.Item href="#about" onClick={noop}>
-              {'About MusicBrainz'}
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#sponsors" onClick={noop}>
-              {'Sponsors'}
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#team" onClick={noop}>
-              {'Team'}
-            </NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#licenses" onClick={noop}>
-              {'Data Licenses'}
-            </NavDropdown.Item>
-          </NavDropdown>
-        </Nav>
-        <Form inline>
-          <FormControl placeholder="Search" type="text" />
-          <FormControl as="select" className="custom-select">
-            <option>{'Artist'}</option>
-            <option>{'Recording'}</option>
-            <option>{'Work'}</option>
-          </FormControl>
-          <Button variant="outline-success">{'Search'}</Button>
-        </Form>
-      </Navbar.Collapse>
-    </Navbar>
+    <Header />
   ));
 
 storiesOf('Progress Bar', module)
