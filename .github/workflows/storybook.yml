@@ -1,5 +1,6 @@
 name: Build and Deploy Storybook
 on:
+  workflow_dispatch:
   push:
     branches: [ master ]
 jobs:

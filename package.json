@@ -4,7 +4,10 @@
   "description": "Design system of MetaBrainz",
   "main": "components/index.js",
   "directories": {
-    "doc": "documents"
+    "doc": "guidelines"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "dist": "sass scss/bootstrap-prod.scss | tee | postcss --use autoprefixer --no-map > dist/bootstrap.css",
@@ -13,13 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/metabrainz/design-system.git"
+    "url": "https://github.com/metabrainz/design-system"
   },
   "license": "GPL-2.0-or-later",
   "bugs": {
     "url": "https://github.com/metabrainz/design-system/issues"
   },
   "homepage": "https://github.com/metabrainz/design-system#readme",
+  "keywords": [ "design-system", "metabrainz", "react", "storybook", "musicbrainz" ],
   "devDependencies": {
     "@babel/core": "^7.16.12",
     "@babel/eslint-parser": "^7.16.5",
