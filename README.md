@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href=""><img src="/cover.jpg" alt="MetaBrainz Design System"></a>
+  <a href=""><img src="/assets/cover.jpg" alt="MetaBrainz Design System"></a>
 </h1>
 
 <h4 align="center">MetaBrainz Design System</h4>
