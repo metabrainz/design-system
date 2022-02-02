@@ -19,8 +19,22 @@ node_modules/
 .DS_Store
 
 # Storybook
+stories/
 storybook-static/
+.storybook/
 
 # GitHub Pages Build
 docs-build/
 docs/
+
+# Guidelines
+guidelines/
+style/
+
+# Assets
+assets/
+
+# SCSS
+scss/
+
+

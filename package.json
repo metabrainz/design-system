@@ -1,5 +1,5 @@
 {
-  "name": "design-system",
+  "name": "@metabrainz/design-system",
   "version": "1.0.0",
   "description": "Design system of MetaBrainz",
   "main": "components/index.js",
