@@ -59,12 +59,12 @@ The MetaBrainz design system codifies existing UI components into a central, wel
 ```bash
 yarn add @metabrainz/design-system
 ```
- or
+or
 ```bash
 npm install --save @metabrainz/design-system
 ```
 
-Everytime a GitHub is release is made, a new version of the package is automatically available at [@metabrainz/design-system](https://www.npmjs.com/package/@metabrainz/design-system)
+Everytime a GitHub release is made, a new version of the package is automatically available at [@metabrainz/design-system](https://www.npmjs.com/package/@metabrainz/design-system)
 
 ## Contributing
 	  
