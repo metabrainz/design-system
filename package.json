@@ -1,6 +1,6 @@
 {
-  "name": "@metabrainz/design-system",
-  "version": "1.0.2",
+  "name": "@akshaaatt/design-system",
+  "version": "1.0.3",
   "description": "Design system of MetaBrainz",
   "main": "components/index.js",
   "directories": {
@@ -11,18 +11,19 @@
   },
   "scripts": {
     "dist": "sass scss/bootstrap-prod.scss | tee | postcss --use autoprefixer --no-map > dist/bootstrap.css",
+    "dist-lb": "sass scss/bootstrap-lb.scss | tee | postcss --use autoprefixer --no-map > dist/bootstrap-lb.css",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o docs-build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/metabrainz/design-system"
+    "url": "https://github.com/akshaaatt/design-system"
   },
   "license": "GPL-2.0-or-later",
   "bugs": {
-    "url": "https://github.com/metabrainz/design-system/issues"
+    "url": "https://github.com/akshaaatt/design-system/issues"
   },
-  "homepage": "https://github.com/metabrainz/design-system#readme",
+  "homepage": "https://github.com/akshaaatt/design-system#readme",
   "keywords": [ "design-system", "metabrainz", "react", "storybook", "musicbrainz" ],
   "devDependencies": {
     "@babel/core": "^7.16.12",
