@@ -1,6 +1,6 @@
 {
   "name": "@metabrainz/design-system",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Design system of MetaBrainz",
   "main": "components/index.js",
   "directories": {
@@ -10,7 +10,8 @@
     "access": "public"
   },
   "scripts": {
-    "dist": "sass scss/bootstrap-prod.scss | tee | postcss --use autoprefixer --no-map > dist/bootstrap.css",
+    "dist-mb": "sass scss/bootstrap-mb.scss | tee | postcss --use autoprefixer --no-map > dist/bootstrap-mb.css",
+    "dist-generic": "sass scss/bootstrap-generic.scss | tee | postcss --use autoprefixer --no-map > dist/bootstrap-generic.css",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o docs-build"
   },
