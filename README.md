@@ -25,6 +25,47 @@ This design system is a living, breathing document that contains all of the buil
 - [Components](https://github.com/metabrainz/design-system/blob/master/guidelines/component-usage.md)
 - [Contributing Guidelines](https://github.com/metabrainz/design-system/blob/master/guidelines/component-usage.md)
 
+## Tech stack
+
+Building components
+
+- 📚 [Storybook](https://storybook.js.org) for UI component development and auto-generated docs
+- ⚛️ [React](https://reactjs.org/) declarative component-centric UI
+
+Maintaining the system
+
+- 📦 [NPM](https://www.npmjs.com/) for packaging and distribution
+- 🚥 [GitHub Actions](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration) Continuous integration
+
+## Why
+
+The MetaBrainz design system codifies existing UI components into a central, well-maintained repository. It is built to address having to paste the same components into multiple projects again and again. This simplifies building UI's with MetaBrainz's design patterns.
+
+#### What we're doing
+
+- Build and maintain a design system in the open
+- Share UI components between multiple apps
+- Welcome contributors of all levels and backgrounds
+
+#### What we're not doing
+
+- Rewrite all new components from scratch
+- Overhaul the visual design of components
+- Typescript (the consumer apps don't use it)
+- Compete with more general design systems like ANT or Material.
+
+## Install
+
+```bash
+yarn add @metabrainz/design-system
+```
+or
+```bash
+npm install --save @metabrainz/design-system
+```
+
+Everytime a GitHub release is made, a new version of the package is automatically available at [@metabrainz/design-system](https://www.npmjs.com/package/@metabrainz/design-system)
+
 ## Contributing
 	  
 Got **something interesting** you'd like to **ask or share**? Start a discussion at `#metabrainz` IRC channel on libera.chat.
