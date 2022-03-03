@@ -24,7 +24,13 @@
     "url": "https://github.com/metabrainz/design-system/issues"
   },
   "homepage": "https://github.com/metabrainz/design-system#readme",
-  "keywords": [ "design-system", "metabrainz", "react", "storybook", "musicbrainz" ],
+  "keywords": [
+    "design-system",
+    "metabrainz",
+    "react",
+    "storybook",
+    "musicbrainz"
+  ],
   "devDependencies": {
     "@babel/core": "^7.16.12",
     "@babel/eslint-parser": "^7.16.5",
@@ -55,6 +61,7 @@
     "react-dom": "^17.0.2",
     "sass": "^1.49.0",
     "sass-loader": "^7.1.0",
+    "storybook-addon-designs": "^6.2.1",
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
     "webpack": "^5.67.0"
