@@ -1,19 +1,18 @@
 import {withDesign} from 'storybook-addon-designs';
 import React from 'react';
-
 import {Button} from '../components';
 
 export default {
   component: Button,
   decorators: [withDesign],
-  title: 'ListenBrainz',
+  title: 'MusicBrainz',
 };
 
-export const lbRedesign = () => <Button>ListenBrainz</Button>
+export const mbRedesign = () => <Button>MusicBrainz</Button>
 
-lbRedesign.parameters = {
+mbRedesign.parameters = {
   design: {
     type: 'figma',
-    url: 'https://www.figma.com/file/YRbCOtFHBez8XmMdCKbGta',
+    url: 'https://www.figma.com/file/ln8XiFLit634KC3YkUW2RS',
   },
 };
