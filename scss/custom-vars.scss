@@ -1,11 +1,17 @@
 $blue:      #4e7ec2;
+$light-blue: #15DED8;
+$aqua-haze:  #f3f3f3;
 $gray-400:  #ced4da;
 $gray-500:  #adb5bd;
+$light-gray: #e0e0e0;
 $green:     #68B360;
 $orange:    #eb743b;
 $purple:    #ba478f;
 $red:       #c64040;
 $yellow:    #ffcd5c;
+$light-black: #1a1a1a;
+$dark-main: #213b52;
+$dark-secondary: #243133;
 
 $primary:       $purple;
 $info:          lighten($primary, 20%);
@@ -49,3 +55,38 @@ $nav-link-padding-y:    0.75rem;
 $navbar-nav-link-padding-x:     1rem;
 
 $pagination-disabled-color:     $gray-500;
+
+.mb-theme-light {
+  --box-color: white;
+  --color: black;
+  --main-bg: white;
+  --search-bg: white;
+  --background-color: $aqua-haze;
+  --primary-color: $orange;
+  --secondary-color: $purple;
+  --title-color: $dark-main;
+  --gray-light: $light-gray;
+  --intro-bg-first: $purple;
+  --intro-bg-second: $orange;
+  --selected-bg: $dark-main;
+  --btn-dark: black;
+  --hint-color: $light-black;
+  --projects-bg: $aqua-haze;
+}
+.mb-theme-dark {
+  --box-color: $dark-secondary;
+  --main-bg: $dark-secondary;
+  --color: white;
+  --background-color: black;
+  --search-bg: $light-black;
+  --primary-color: $purple;
+  --secondary-color: $orange;
+  --title-color: $aqua-haze;
+  --gray-light: $dark-secondary;
+  --intro-bg-first: $dark-main;
+  --intro-bg-second: $light-black;
+  --selected-bg: $light-blue;
+  --btn-dark: $dark-secondary;
+  --hint-color: $aqua-haze;
+  --projects-bg: $dark-secondary;
+}
