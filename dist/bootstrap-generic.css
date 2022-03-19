@@ -4,35 +4,35 @@
   --color: black;
   --main-bg: white;
   --search-bg: white;
-  --background-color: $aqua-haze;
-  --primary-color: $orange;
-  --secondary-color: $purple;
-  --title-color: $dark-main;
-  --gray-light: $light-gray;
-  --intro-bg-first: $purple;
-  --intro-bg-second: $orange;
-  --selected-bg: $dark-main;
+  --background-color: #f3f3f3;
+  --primary-color: #eb743b;
+  --secondary-color: #ba478f;
+  --title-color: #213b52;
+  --gray-light: #e0e0e0;
+  --intro-bg-first: #ba478f;
+  --intro-bg-second: #eb743b;
+  --selected-bg: #213b52;
   --btn-dark: black;
-  --hint-color: $light-black;
-  --projects-bg: $aqua-haze;
+  --hint-color: #1a1a1a;
+  --projects-bg: #f3f3f3;
 }
 
 .mb-theme-dark {
-  --box-color: $dark-secondary;
-  --main-bg: $dark-secondary;
+  --box-color: #243133;
+  --main-bg: #243133;
   --color: white;
   --background-color: black;
-  --search-bg: $light-black;
-  --primary-color: $purple;
-  --secondary-color: $orange;
-  --title-color: $aqua-haze;
-  --gray-light: $dark-secondary;
-  --intro-bg-first: $dark-main;
-  --intro-bg-second: $light-black;
-  --selected-bg: $light-blue;
-  --btn-dark: $dark-secondary;
-  --hint-color: $aqua-haze;
-  --projects-bg: $dark-secondary;
+  --search-bg: #1a1a1a;
+  --primary-color: #ba478f;
+  --secondary-color: #eb743b;
+  --title-color: #f3f3f3;
+  --gray-light: #243133;
+  --intro-bg-first: #213b52;
+  --intro-bg-second: #1a1a1a;
+  --selected-bg: #15DED8;
+  --btn-dark: #243133;
+  --hint-color: #f3f3f3;
+  --projects-bg: #243133;
 }
 
 :root {
