@@ -3063,6 +3063,40 @@ a > .bs code {
   font-size: 0.875rem;
   border-radius: 0;
 }
+.bs .fade {
+  transition: opacity 0.15s linear;
+}
+@media (prefers-reduced-motion: reduce) {
+  .bs .fade {
+    transition: none;
+  }
+}
+.bs .fade:not(.show) {
+  opacity: 0;
+}
+.bs .collapse:not(.show) {
+  display: none;
+}
+.bs .collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .bs .collapsing {
+    transition: none;
+  }
+}
+.bs .collapsing.collapse-horizontal {
+  width: 0;
+  height: auto;
+  transition: width 0.35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .bs .collapsing.collapse-horizontal {
+    transition: none;
+  }
+}
 .bs .dropup,
 .bs .dropend,
 .bs .dropdown,
