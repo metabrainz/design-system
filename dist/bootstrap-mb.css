@@ -3097,6 +3097,44 @@ a > .bs code {
     transition: none;
   }
 }
+.bs .container,
+.bs .container-fluid,
+.bs .container-xxl,
+.bs .container-xl,
+.bs .container-lg,
+.bs .container-md,
+.bs .container-sm {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .bs .container-sm, .bs .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .bs .container-md, .bs .container-sm, .bs .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .bs .container-lg, .bs .container-md, .bs .container-sm, .bs .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .bs .container-xl, .bs .container-lg, .bs .container-md, .bs .container-sm, .bs .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .bs .container-xxl, .bs .container-xl, .bs .container-lg, .bs .container-md, .bs .container-sm, .bs .container {
+    max-width: 1320px;
+  }
+}
 .bs .dropup,
 .bs .dropend,
 .bs .dropdown,
@@ -3489,8 +3527,13 @@ a > .bs code {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.bs .navbar > .container-xxl, .bs .navbar > .container-xl, .bs .navbar > .container-lg, .bs .navbar > .container-md, .bs .navbar > .container-sm, .bs .navbar > .container,
-.bs .navbar > .container-fluid {
+.bs .navbar > .container,
+.bs .navbar > .container-fluid,
+.bs .navbar > .container-sm,
+.bs .navbar > .container-md,
+.bs .navbar > .container-lg,
+.bs .navbar > .container-xl,
+.bs .navbar > .container-xxl {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
