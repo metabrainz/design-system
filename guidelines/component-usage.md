@@ -3,8 +3,6 @@
 1. [Syntax](#syntax)
 2. [Formatting](#formatting)
 3. [Component Structure](#component-structure)
-4. [Eslint](#eslint)
-
 
 ## Syntax
 
