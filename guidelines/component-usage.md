@@ -10,12 +10,11 @@
 
 1. #### Naming Style **[⬆](#table-of-content)**
 
-   * Always use `.jsx` | `.tsx` extensions.
+   * Always use the `.js` extension.
    * Use UpperCamelCase as a components name.
    * Use lowerCamelCase for prop names.
-   * It's recommended to use suffixes `Component` or `Container` for explicit definition of "dumb" and "smart" components: `UserProfileComponent` and `UserProfileContainer`.
    * Component name should be the same as the file name. This means that the use of `index` files is forbidden for components. It's easier to find components by filename rather than by folder name.
-   * Component filenames should be in UpperCamelCase. It's allowed to use dots (`.`) to explicitly mention type of component: `Dashboard.component.tsx`, `UserProfile.container.tsx`.
+   * Component filenames should be in UpperCamelCase. It's allowed to use dots (`.`) to explicitly mention type of component: `Dashboard.component.js`.
    * Props and state interface definitions shouldn't be prefixed with `I`. Use UpperCamelCase instead.
    * Exported props types should have a suffix `Props`: `ProgressBarProps`. Not exported props and state interfaces recommended naming `Props` and `State` respectively.   
 
@@ -82,25 +81,13 @@
 
 ## Component Structure
 
-1. #### Naming of component members **[⬆](#table-of-content)**
+The first and recommended component type in React is functional components. A functional component is basically a JavaScript/ES6 function that returns a React element (JSX). According to React's official docs, the function below is a valid functional component:
 
-   * Methods that return React Node must start with `render` prefix: `renderTableFooter()`.
-   * Event handlers must start with `on` prefix: `onSettingsPress()`.
+    function Welcome(props) {
+      return <h1>Hello, {props.name}</h1>;
+    }
+Alternatively, you can also create a functional component with the arrow function definition:
 
-1. #### Component members ordering **[⬆](#table-of-content)**
-
-   * Members of class component should be in following order:
-     1. `static` fields and methods
-     1. `constructor`
-     1. component lifecycle methods (`componentDidMount`, `shouldComponentUpdate`, etc)
-     1. utility methods (not event handlers, nor render methods)
-     1. event handlers
-     1. render methods like `renderProfilePicture()`
-     1. render
-
-
-## ESLint
-
-   * To enforce code consistency & avoid potential bugs, the usage of [ESLint](https://github.com/eslint/eslint) is strongly recommended.
-   * It is recommended to use [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) package in order for ESLint to recognize React semantics.
-   * When using TypeScript, using [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint) is a necessity for ESLint and TypeScript working together.
+    const Welcome = (props) => { 
+      return <h1>Hello, {props.name}</h1>; 
+    }
