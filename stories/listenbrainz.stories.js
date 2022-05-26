@@ -9,7 +9,7 @@ export default {
   title: 'ListenBrainz',
 };
 
-export const lbRedesign = () => <Button>ListenBrainz</Button>
+export const lbRedesign = () => <Button>{'ListenBrainz'}</Button>;
 
 lbRedesign.parameters = {
   design: {

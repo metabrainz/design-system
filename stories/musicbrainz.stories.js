@@ -1,5 +1,6 @@
 import {withDesign} from 'storybook-addon-designs';
 import React from 'react';
+
 import {Button} from '../components';
 
 export default {
@@ -8,7 +9,7 @@ export default {
   title: 'MusicBrainz',
 };
 
-export const mbRedesign = () => <Button>MusicBrainz</Button>
+export const mbRedesign = () => <Button>{'MusicBrainz'}</Button>;
 
 mbRedesign.parameters = {
   design: {
