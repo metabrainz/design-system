@@ -1,5 +1,6 @@
 # Ignore all folders
 **/
+.**
 
 # Allow only the components and stories folder
 !components
