@@ -33,4 +33,4 @@ jobs:
         with:
           eslint: true
           prettier: true
-          eslint_args: ./components ./stories
+          eslint_args: "./components ./stories"
