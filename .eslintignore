@@ -1,6 +1,7 @@
 # Ignore all folders
 **/
 .**
+README.md
 
 # Allow only the components and stories folder
 !components
