@@ -33,5 +33,5 @@ jobs:
         with:
           eslint: true
           prettier: true
-          eslint_dir: ./components ./stories
-          prettier_dir: ./components ./stories
+          eslint_dir: ./stories
+          prettier_dir: ./stories
