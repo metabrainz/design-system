@@ -13,7 +13,7 @@
    * Component name should be the same as the file name. This means that the use of `index` files is forbidden for components. It's easier to find components by filename rather than by folder name.
    * Component filenames should be in UpperCamelCase. It's allowed to use dots (`.`) to explicitly mention type of component: `Dashboard.component.js`.
    * Props and state interface definitions shouldn't be prefixed with `I`. Use UpperCamelCase instead.
-   * Exported props types should have a suffix `Props`: `ProgressBarProps`. Not exported props and state interfaces recommended naming `Props` and `State` respectively.   
+   * Exported props or state types should have a descriptive name and a `Props` or `State` suffix: `ProgressBarProps`, `EntityDialogState`. Non-exported types are recommended to be named `Props` and `State` respectively.   
 
 ## Component Structure
 
