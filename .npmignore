@@ -39,9 +39,8 @@ assets/
 scss/
 
 # BRAND
-brand/
+brand/icons/
+brand/logos/development/
 
 # DOCUMENTATION ASSETS
 documentation/
-
-
