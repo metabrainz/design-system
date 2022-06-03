@@ -8,12 +8,11 @@
 1. #### Naming Style **[⬆](#table-of-content)**
 
    * Always use the `.js` extension.
-   * Use UpperCamelCase as a components name.
+   * Use UpperCamelCase for component names.
    * Use lowerCamelCase for prop names.
-   * Component name should be the same as the file name. This means that the use of `index` files is forbidden for components. It's easier to find components by filename rather than by folder name.
-   * Component filenames should be in UpperCamelCase. It's allowed to use dots (`.`) to explicitly mention type of component: `Dashboard.component.js`.
+   * The component name should be the same as the file name. This means that the use of `index` files is forbidden for components. It's easier to find components by filename rather than by folder name.
    * Props and state interface definitions shouldn't be prefixed with `I`. Use UpperCamelCase instead.
-   * Exported props or state types should have a descriptive name and a `Props` or `State` suffix: `ProgressBarProps`, `EntityDialogState`. Non-exported types are recommended to be named `Props` and `State` respectively.   
+   * Exported props or state types should have a descriptive name and a `Props` or `State` suffix: `ProgressBarProps`, `EntityDialogState`. Non-exported types are recommended to be named `Props` and `State` respectively. If more than one non-exported set of props is needed, give all but the main one a name matching their component.
 
 ## Component Structure
 
