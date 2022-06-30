@@ -38,22 +38,22 @@ A specific logo may display fine at a smaller size, but other project logos have
 
 ###### Logo spacing
 
-><img src="./readme images/logo_margin.png" alt="logo with margin guide" height="137px"></br>
+><img src="../documentation/images/logo_margin.png" alt="logo with margin guide" height="137px"></br>
 >An area of clear space must be maintained around all sides to preserve the integrity of the logo. This separation from other elements optimises visibility and recognition.</br>
 >Clear space on all sides of the logo is one ‘half honeycomb’.
 
 ###### Logo don'ts
 
-><img src="./readme images/dont_stretch.png" alt="stretched logo" height="33px"></br>
+><img src="../documentation/images/dont_stretch.png" alt="stretched logo" height="33px"></br>
 >*Don't* stretch the logo.
 
-><img src="./readme images/dont_effects.png" alt="logo with drop shadow effect added" height="33px"></br>
+><img src="../documentation/images/dont_effects.png" alt="logo with drop shadow effect added" height="33px"></br>
 >*Don't* alter the logo or add effects such as drop shadows, embossing, etc.
 
-><img src="./readme images/dont_opacity.png" alt="logo at half opacity" height="33px"></br>
+><img src="../documentation/images/dont_opacity.png" alt="logo at half opacity" height="33px"></br>
 >*Don't* change the logo opacity
 
-><img src="./readme images/dont_background.png" alt="logo with checkered background" height="33px"></br>
+><img src="../documentation/images/dont_background.png" alt="logo with checkered background" height="33px"></br>
 >*Don't* use the logo on a busy or colorful background
 
 ## Colours
