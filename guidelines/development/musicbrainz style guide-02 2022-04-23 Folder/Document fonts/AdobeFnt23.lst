@@ -1,0 +1,258 @@
+%!Adobe-FontList 1.23
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AcuminVariableConcept
+FamilyName:Acumin Variable Concept
+StyleName:Default
+FullName:Acumin Variable Concept Default
+MenuName:Acumin Variable Concept
+FamilyPrefix:AcuminConcept
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Spiteful\Desktop\musicbrainz style guide-02 2022-04-23 Folder\Document fonts\AcuminVariableConcept.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:CFF2VariableFont
+FileLength:1029036
+FileModTime:1653005290
+WeightClass:275
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Acumin Variable Concept
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Roboto-Bold
+FamilyName:Roboto
+StyleName:Bold
+FullName:Roboto Bold
+MenuName:Roboto
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\Spiteful\Desktop\musicbrainz style guide-02 2022-04-23 Folder\Document fonts\Roboto-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:162464
+FileModTime:1578994564
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Roboto
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Roboto-Medium
+FamilyName:Roboto
+StyleName:Medium
+FullName:Roboto Medium
+MenuName:Roboto Medium
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Spiteful\Desktop\musicbrainz style guide-02 2022-04-23 Folder\Document fonts\Roboto-Medium.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:162588
+FileModTime:1578994564
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Roboto Medium
+NameArray:0,Win,16,Roboto
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Roboto-Regular
+FamilyName:Roboto
+StyleName:Regular
+FullName:Roboto
+MenuName:Roboto
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Spiteful\Desktop\musicbrainz style guide-02 2022-04-23 Folder\Document fonts\Roboto-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:162876
+FileModTime:1578994564
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Roboto
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Sintony-Bold
+FamilyName:Sintony
+StyleName:Bold
+FullName:Sintony Bold
+MenuName:Sintony
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\Spiteful\Desktop\musicbrainz style guide-02 2022-04-23 Folder\Document fonts\Sintony-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:24112
+FileModTime:1359453600
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Sintony
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Sintony
+FamilyName:Sintony
+StyleName:Regular
+FullName:Sintony
+MenuName:Sintony
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Spiteful\Desktop\musicbrainz style guide-02 2022-04-23 Folder\Document fonts\Sintony-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:24312
+FileModTime:1359453600
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Sintony
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Calibri
+FamilyName:Calibri
+StyleName:Regular
+FullName:Calibri
+MenuName:Calibri
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Spiteful\Desktop\musicbrainz style guide-02 2022-04-23 Folder\Document fonts\calibri.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1648120
+FileModTime:1575706106
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Calibri
+NameArray:0,Win,1,Calibri
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Calibri-Bold
+FamilyName:Calibri
+StyleName:Bold
+FullName:Calibri Bold
+MenuName:Calibri
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\Spiteful\Desktop\musicbrainz style guide-02 2022-04-23 Folder\Document fonts\calibrib.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1613668
+FileModTime:1575706106
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Calibri Bold
+NameArray:0,Win,1,Calibri
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Calibri-Italic
+FamilyName:Calibri
+StyleName:Italic
+FullName:Calibri Italic
+MenuName:Calibri
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\Spiteful\Desktop\musicbrainz style guide-02 2022-04-23 Folder\Document fonts\calibrii.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1196672
+FileModTime:1575706106
+WeightClass:400
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,4,Calibri Italic
+NameArray:0,Win,1,Calibri
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Calibri-Light
+FamilyName:Calibri
+StyleName:Light
+FullName:Calibri Light
+MenuName:Calibri Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Spiteful\Desktop\musicbrainz style guide-02 2022-04-23 Folder\Document fonts\calibril.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1438808
+FileModTime:1575706106
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,Calibri Light
+NameArray:0,Mac,4,Calibri Light
+NameArray:0,Win,1,Calibri Light
+NameArray:0,Win,16,Calibri
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Calibri-LightItalic
+FamilyName:Calibri
+StyleName:Light Italic
+FullName:Calibri Light Italic
+MenuName:Calibri Light
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\Spiteful\Desktop\musicbrainz style guide-02 2022-04-23 Folder\Document fonts\calibrili.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1061248
+FileModTime:1575706106
+WeightClass:300
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,18,Calibri Light Italic
+NameArray:0,Mac,4,Calibri Light Italic
+NameArray:0,Win,1,Calibri Light
+NameArray:0,Win,16,Calibri
+%EndFont
+
