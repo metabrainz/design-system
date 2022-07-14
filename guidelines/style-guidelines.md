@@ -1,3 +1,5 @@
+The following are guidelines, not rules. Assess every situation case-by-case and use your judgement.
+
 ## Table of contents
 
 1. [How we write](#how-we-write)
@@ -20,7 +22,9 @@ MetaBrainz speaks in a friendly, direct and easily understandable manner. We:
 
 #### Spelling
 
-We use US English.
+We use US English. For instance:
+* color > colour
+* organize > organise
 
 #### Active and passive writing 
 
@@ -35,7 +39,7 @@ Active writing is more direct and should be used most of the time. We use short,
 
 #### Exclamation marks
 
-We don't use exclamation marks in most instances - for instance, we don't use exclamation marks in documentation or page content.
+We avoid over-using exclamation marks in most instances - for instance, in documentation or page content.
 
 #### Colon and semi-colons
 
@@ -62,13 +66,13 @@ We only use capitals for proper nouns, such as:
 * titles, such as: of books, albums, recordings
 
 'Types' of places are not capitalized, unless referring to a specific place.
-For example: "I like the library" - and "I like my local Library"
+For example: "I like the library" - and "I like Upper Hutt Library"
 
 Generally, terms are not proper nouns, so should not be capitalised. Technical terms are not proper nouns. But if a word or term is branded as a distinct thing, treat it as a proper noun.
 
 #### Headings
 
-We use sentence case so only the first letter is upper case. We never link headings.
+We use sentence case so only the first letter is upper case. We never use links in headings.
 
 #### Quotation marks
 
@@ -77,8 +81,7 @@ We use double quotation marks for:
 * direct speech.
 
 We use single quotation marks for:
-* technical terms (the first time it is used)
-* classification descriptors
+* technical terms, if deemed necessary (the first time it is used)
 * titles of documents or publications
 
 
@@ -86,9 +89,9 @@ We use single quotation marks for:
 
 We:
 * link to relevant content on our website before we link to external websites 
-* never link headings
+* never use links in headings
 * write descriptive links that tell you what you’ll find when you follow them - not 'click here'
-* don't set links to open in a new tab or window, with exceptions to be decided case by case.
+* links inside editing systems should always open in new tabs to not disrupt a user's workflow. In most other circumstances we don't set links to open in a new tab or window.
 
 
 ## Lists
@@ -104,7 +107,7 @@ We use 2 types of bulleted lists – single-sentence lists and multi-sentence li
 When we’re writing a single-sentence list, we:
 * start with a stem sentence that all the points have in common
 * start each point in lower case, and only use a full stop on the last point
-* don't use 'and' or 'or' on the second-to-last point
+* don't use 'and' or 'or' at the end of the second-to-last point
 * check that each point makes a full sentence when read with the stem.
 
 Multi-sentence lists are introduced by a complete sentence.
@@ -131,15 +134,6 @@ We use:
 * & – only if it’s part of a brand name
 * KB for kilobyte, MB for megabyte, and GB for gigabyte, for example 122 KB.
 
-#### Currency
-
-We put both the currency code and currency symbol before any amounts of money we write.
-We don't use spaces between the code, symbol and amount.
-
-For example:
-* 'If you’re a United States citizen, you pay USD$640'.
-* 'If you’re an Australian citizen it costs AUD$890'.
-
 #### Abbreviations
 
 We expand all abbreviations when we use them for the first time on a page.
@@ -148,7 +142,6 @@ For example: 'Welcome to MusicBrainz (MB)'.
 To make our content easier to read, we avoid using:
 * e.g.
 * i.e.
-* etc.
 
 These are often written in full, such as:
 * for example
@@ -159,4 +152,6 @@ These are often written in full, such as:
 
 ## Common terms
 
-We refer to people who use our data, sites and applications as 'user'/'users'
+We use two terms to refer to the people who interact with our data, sites and applications:
+* User/s: Everyone, including the below. When in doubt, use this widely understood term.
+* Editor/s: Users who contribute to or are part of the community.
