@@ -9,9 +9,9 @@ export default {
   title: 'CritiqueBrainz',
 };
 
-export const mbRedesign = () => <Button>{'CritiqueBrainz'}</Button>;
+export const cbRedesign = () => <Button>{'CritiqueBrainz'}</Button>;
 
-mbRedesign.parameters = {
+cbRedesign.parameters = {
   design: {
     type: 'figma',
     url: 'https://www.figma.com/file/nSqrbsMcVARmj52kyXYqwb/CritiqueBrainz-redesign?node-id=0%3A1',
