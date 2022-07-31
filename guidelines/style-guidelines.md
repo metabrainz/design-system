@@ -18,7 +18,7 @@ The following are guidelines, not rules. Assess every situation case-by-case and
 MetaBrainz speaks in a friendly, direct and easily understandable manner. We:
 * use plain, simple, language when possible
 * use short sentences
-* use an active voice (avoid the passive tense).
+* use an active voice (avoid the passive voice).
 
 #### Spelling
 
