@@ -55,7 +55,7 @@ For example: 1960s.
 
 #### Bold
 
-We rarely use bold – using too much will make it difficult for users to know which parts of your content they need to pay the most attention to. To emphasise words or phrases, we:
+We rarely use bold – using too much will make it difficult for users to know which parts of your content they need to pay the most attention to. To emphasize words or phrases, we:
 * put key information at the start of sentences
 * use headings
 
