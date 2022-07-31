@@ -39,7 +39,7 @@ Active writing is more direct and should be used most of the time. We use short,
 
 #### Exclamation marks
 
-We avoid over-using exclamation marks in most instances - for instance, in documentation or page content.
+We avoid over-using exclamation marks in most instances — for instance, in documentation or page content.
 
 #### Colon and semi-colons
 
