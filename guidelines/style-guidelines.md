@@ -23,8 +23,8 @@ MetaBrainz speaks in a friendly, direct and easily understandable manner. We:
 #### Spelling
 
 We use US English. For instance:
-* color > colour
-* organize > organise
+* color, not colour
+* organize, not organise
 
 #### Active and passive writing 
 
