@@ -63,7 +63,7 @@ We rarely use bold – using too much will make it difficult for users to know w
 
 We only use capitals for proper nouns, such as:
 * names of people, places and things, including buildings and brands
-* titles, such as: of books, albums, recordings
+* titles of books, albums, and recordings.
 
 'Types' of places are not capitalized, unless referring to a specific place.
 For example: "I like the library" - and "I like Upper Hutt Library"
