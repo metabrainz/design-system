@@ -68,7 +68,7 @@ We only use capitals for proper nouns, such as:
 'Types' of places are not capitalized, unless referring to a specific place.
 For example: "I like the library" - and "I like Upper Hutt Library"
 
-Generally, terms are not proper nouns, so should not be capitalised. Technical terms are not proper nouns. But if a word or term is branded as a distinct thing, treat it as a proper noun.
+Generally, terms are not proper nouns, so should not be capitalized. Technical terms are not proper nouns. But if a word or term is branded as a distinct thing, treat it as a proper noun.
 
 #### Headings
 
