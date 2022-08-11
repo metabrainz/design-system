@@ -1,5 +1,7 @@
 The following are guidelines, not rules. Assess every situation case-by-case and use your judgement.
 
+For branding and design guidelines, please use: <a href="./design-guidelines.md">Design Guidelines</a>
+
 ## Table of contents
 
 1. [How we write](#how-we-write)
