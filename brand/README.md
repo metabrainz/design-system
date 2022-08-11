@@ -1,0 +1,1 @@
+For brand guidelines please see <a href="../guidelines/design-guidelines.md">design-guidelines.md</a>.
