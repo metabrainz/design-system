@@ -26,7 +26,7 @@ MetaBrainz speaks in a friendly, direct and easily understandable manner. We:
 
 We use US English. For instance:
 * color, not colour
-* organize, not organise
+* organize, not organise.
 
 #### Active and passive writing 
 
@@ -45,7 +45,7 @@ We avoid over-using exclamation marks in most instances — for instance, in doc
 
 #### Colon and semi-colons
 
-We avoid these. When possible we’ll write 2 sentences instead, or separate the clauses using a dash (with a space on either side).
+When possible we’ll write 2 sentences instead, for ease of reading. Otherwise you use whatever fits best.
 
 #### Apostrophes
 
@@ -74,7 +74,7 @@ Generally, terms are not proper nouns, so should not be capitalized. Technical t
 
 #### Headings
 
-We use sentence case so only the first letter is upper case. We never use links in headings.
+We use sentence case so only the first letter is upper case. We never link paragraph headings (we do link entity titles/headings).
 
 #### Quotation marks
 
@@ -83,17 +83,19 @@ We use double quotation marks for:
 * direct speech.
 
 We use single quotation marks for:
+* quotes inside quotes
 * technical terms, if deemed necessary (the first time it is used)
-* titles of documents or publications
+* titles of documents or publications.
 
 
 ## Links
 
 We:
 * link to relevant content on our website before we link to external websites 
-* never use links in headings
+* never link paragraph headings (we do link entity titles/headings)
 * write descriptive links that tell you what you’ll find when you follow them - not 'click here'
-* links inside editing systems should always open in new tabs to not disrupt a user's workflow. In most other circumstances we don't set links to open in a new tab or window.
+* links inside editing systems should always open in new tabs to not disrupt a user's workflow
+* we don't set links to open in a new tab or window in most other circumstances.
 
 
 ## Lists
@@ -121,7 +123,7 @@ Multi-sentence lists are introduced by a complete sentence.
 ## Numbers
 
 In general:
-* we use numerals instead of words when we write numbers – this helps you scan our content
+* we usually use words for numbers from 0-9 and use digits for 10 and up
 * we use commas and no spaces to separate thousands when the number is over 10,000
 * when we’re talking about numbers in the millions, we use the word 'million' instead of writing out the number in full
 * we use spaces to separate groups of numbers when we write phone numbers.
@@ -138,7 +140,7 @@ We use:
 
 #### Abbreviations
 
-We expand all abbreviations when we use them for the first time on a page.
+If using abbreviations on a page, we expand them when we use them for the first time.
 For example: 'Welcome to MusicBrainz (MB)'.
 
 To make our content easier to read, we avoid using:
@@ -157,3 +159,10 @@ These are often written in full, such as:
 We use two terms to refer to the people who interact with our data, sites and applications:
 * User/s: Everyone, including the below. When in doubt, use this widely understood term.
 * Editor/s: Users who contribute to or are part of the community.
+
+To avoid confusion, use: MB = Musicbrainz, MeB = MetaBrainz
+
+
+## Licence
+These style guidelines are released under the [Creative Commons Attribution-ShareAlike(BY-SA) 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.
+Based on https://www.data.govt.nz/about/about-data-govt-nz/our-style-guide/, by Te Kāwanatanga o Aotearoa, CC BY 4.0
