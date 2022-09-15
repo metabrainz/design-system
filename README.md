@@ -24,7 +24,8 @@ This design system is a living, breathing document that contains all of the buil
 - [Design](https://github.com/metabrainz/design-system/blob/master/guidelines/design-guidelines.md)
 - [Components](https://github.com/metabrainz/design-system/blob/master/guidelines/component-usage.md)
 - [Contributing](https://github.com/metabrainz/design-system/blob/master/guidelines/component-usage.md)
-- [Logos](https://github.com/metabrainz/design-system/blob/master/guidelines/logos.md)
+- [Logos](https://github.com/metabrainz/design-system/blob/master/guidelines/design-guidelines.md)
+- [Writing Styleguide](https://github.com/metabrainz/design-system/blob/master/guidelines/style-guidelines.md)
 
 ## Tech stack
 
