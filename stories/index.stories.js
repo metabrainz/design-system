@@ -59,15 +59,15 @@ storiesOf('Welcome', module)
 
 storiesOf('Alert', module)
   .add('Danger Alert', () => (
-      <div>
-        <AlertDismissable variant="danger">
-          <p>{'You just deleted the entity. The changes will now be voted on. Click '}<a className="alert-link">{'here'}</a> {'to know more!'}</p>
-        </AlertDismissable>
-      </div>
-    ),
-    {
-      info: 'Danger alerts should be used when the system has failed to perform an action, or when the user has made an error.',
-    })
+    <div>
+      <AlertDismissable variant="danger">
+        <p>{'You just deleted the entity. The changes will now be voted on. Click '}<a className="alert-link">{'here'}</a> {'to know more!'}</p>
+      </AlertDismissable>
+    </div>
+  ),
+  {
+    info: 'Danger alerts should be used when the system has failed to perform an action, or when the user has made an error.',
+  })
 
   .add('Info Alert', () => (
     <div>
