@@ -14,11 +14,12 @@
     "dist-mb": "sass scss/bootstrap-mb.scss | tee | postcss --use autoprefixer --no-map > dist/bootstrap-mb.css",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o docs-build",
-    "lint": "eslint --fix --ext .ts,.tsx,.js,.jsx,.md ."
+    "lint": "eslint --fix --ext .ts,.tsx,.js,.jsx,.md .",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged && npm run lint"
+      "pre-commit": "pretty-quick --staged && yarn lint"
     }
   },
   "repository": {
@@ -60,7 +61,7 @@
     "eslint-plugin-react": "7.28.0",
     "eslint-plugin-storybook": "^0.6.4",
     "file-loader": "^6.2.0",
-    "husky": "^8.0.1",
+    "husky": "^8.0.0",
     "postcss": "8.4.5",
     "postcss-cli": "9.1.0",
     "postcss-loader": "^4.2.0",
