@@ -14,6 +14,7 @@ import {AlertDismissable, Badge, Button, Breadcrumb, Dropdown, DropdownButton, M
 
 import '../scss/bootstrap-storybook.scss';
 import Login from '../components/shared/Login';
+import Register from '../components/shared/Register';
 
 function noop(event) {
   event.preventDefault();
@@ -275,14 +276,14 @@ storiesOf('Progress Bar', module)
 
 storiesOf('Login', module)
   .add('Default', () => (
-    <Login />
+    <Login cover="/cover.jpg" />
   ), {
     info: 'Login component',
   });
 
 storiesOf('Register', module)
   .add('Default', () => (
-    <Login />
+    <Register cover="/cover.jpg" />
   ), {
     info: 'Login component',
   });

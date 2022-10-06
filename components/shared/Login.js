@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Login = () => {
+const Login = (props) => {
   return (
     <section>
       <div className="container">
@@ -10,7 +10,7 @@ const Login = () => {
               <img
                 alt="..."
                 className="card-img-top"
-                src="/"
+                src={props.cover}
               />
               <div className="card-body">
                 <div className="pt-4 pb-2">

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Register = (props) => {
   return (
-    <section className='section account'>
+    <section>
       <div className="container">
         <div className="row">
           <div className="col-lg-5 col-md-6">
@@ -114,9 +114,7 @@ const Register = (props) => {
                   <div className="col-12">
                     <p className="small mb-0">
                       Already have an account?
-                      <Link href="/login">
-                        <a> Log in</a>
-                      </Link>
+                      <a> Log in</a>
                     </p>
                   </div>
                 </form>
@@ -127,10 +125,8 @@ const Register = (props) => {
             <div className="card" style={{height: '595px'}}>
               <img
                 alt="All Projects"
-                className="card-img-top imz"
-                height="200"
-                src="/assets/img/meb-icons/all_projects.jpg"
-                width="200"
+                className="card-img-top"
+                src={props.cover}
               />
               <div className="card-body">
                 <p className="card-text">
