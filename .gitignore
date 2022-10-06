@@ -23,3 +23,5 @@ storybook-static/
 
 # GitHub Pages Build
 docs-build/
+
+.idea
