@@ -10,19 +10,7 @@ import {
 import {storiesOf, addDecorator} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
 
-import {
-  AlertDismissable,
-  Badge,
-  Button,
-  Breadcrumb,
-  Dropdown,
-  DropdownButton,
-  Modal,
-  Pagination,
-  ProgressBar,
-  Table,
-  Tooltip,
-} from '../components';
+import {AlertDismissable, Badge, Button, Breadcrumb, Dropdown, DropdownButton, Modal, Pagination, ProgressBar, Table, Tooltip} from '../components';
 
 import '../scss/bootstrap-storybook.scss';
 import Login from '../components/shared/Login';
@@ -53,7 +41,7 @@ storiesOf('Welcome', module)
       <li><a href="https://metabrainz.org/">{'MetaBrainz'}</a></li>
       <li><a href="https://github.com/metabrainz/design-system">{'GitHub Repo'}</a></li>
       <li><a href="https://tickets.musicbrainz.org/">{'Bug Tracker'}</a></li>
-      <li><a href="https://twitter.com/MusicBrainz">{'Twitter'}</a></li>
+      <li><a href="https://twitter.com/MetaBrainz">{'Twitter'}</a></li>
     </div>
   ));
 
