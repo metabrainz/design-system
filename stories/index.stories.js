@@ -25,6 +25,7 @@ import {
 } from '../components';
 
 import '../scss/bootstrap-storybook.scss';
+import Login from '../components/shared/Login';
 
 function noop(event) {
   event.preventDefault();
@@ -281,6 +282,21 @@ storiesOf('Progress Bar', module)
     </div>
   ), {
     info: 'Progress bars help give users immediate feedback. They reduce a user’s uncertainty and give them a reason to wait for an action to complete.',
+  });
+
+
+storiesOf('Login', module)
+  .add('Default', () => (
+    <Login />
+  ), {
+    info: 'Login component',
+  });
+
+storiesOf('Register', module)
+  .add('Default', () => (
+    <Login />
+  ), {
+    info: 'Login component',
   });
 
 storiesOf('Pagination', module)

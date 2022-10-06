@@ -84,7 +84,7 @@ const Login = () => {
                   <div className="col-12">
                     <p className="small mb-0">
                       Do not have account?
-                        <a> Create an account</a>
+                      <a> Create an account</a>
                     </p>
                   </div>
                 </form>
