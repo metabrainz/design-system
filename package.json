@@ -1,6 +1,6 @@
 {
-  "name": "@akshaaatt/design-system",
-  "version": "1.0.3",
+  "name": "@metabrainz/design-system",
+  "version": "1.1.0",
   "description": "Design system of MetaBrainz",
   "main": "components/index.js",
   "directories": {
@@ -11,9 +11,15 @@
   },
   "scripts": {
     "dist": "sass scss/bootstrap-prod.scss | tee | postcss --use autoprefixer --no-map > dist/bootstrap.css",
-    "dist-lb": "sass scss/bootstrap-lb.scss | tee | postcss --use autoprefixer --no-map > dist/bootstrap-lb.css",
+    "dist-generic": "sass scss/bootstrap-generic.scss | tee | postcss --use autoprefixer --no-map > dist/bootstrap-generic.css",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o docs-build"
+    "build-storybook": "build-storybook -o docs-build",
+    "lint": "eslint --fix --ext .ts,.tsx,.js,.jsx,.md ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && npm run lint"
+    }
   },
   "repository": {
     "type": "git",
@@ -23,7 +29,7 @@
   "bugs": {
     "url": "https://github.com/akshaaatt/design-system/issues"
   },
-  "homepage": "https://github.com/akshaaatt/design-system#readme",
+  "homepage": "https://github.com/metabrainz/design-system#readme",
   "keywords": [
     "design-system",
     "metabrainz",
@@ -48,19 +54,25 @@
     "classnames": "^2.3.1",
     "css-loader": "^3.1.0",
     "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "7.28.0",
     "eslint-plugin-storybook": "^0.6.4",
     "file-loader": "^6.2.0",
+    "husky": "^8.0.1",
     "postcss": "8.4.5",
     "postcss-cli": "9.1.0",
     "postcss-loader": "^4.2.0",
+    "prettier": "^2.6.2",
+    "pretty-quick": "^3.1.3",
     "react": "^17.0.2",
     "react-bootstrap": "^2.5.0",
     "react-bootstrap-table-next": "^4.0.3",
     "react-dom": "^17.0.2",
     "sass": "^1.55.0",
     "sass-loader": "^13.0.2",
+    "storybook-addon-designs": "^6.2.1",
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
     "webpack": "^5.74.0"

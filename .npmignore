@@ -15,17 +15,18 @@ node_modules/
 # Optional REPL history
 .node_repl_history
 
-# Remove .DS_Store files on Mac
-.DS_Store
-
 # Storybook
-stories/
 storybook-static/
-.storybook/
 
 # GitHub Pages Build
 docs-build/
-docs/
+
+# OS generated files
+*.DS_Store
+*.ini
+*:Zone.Identifier
+Thumbs.db
+Thumbs.db:encryptable
 
 # Guidelines
 guidelines/
@@ -37,4 +38,9 @@ assets/
 # SCSS
 scss/
 
+# BRAND
+brand/icons/
+brand/logos/development/
 
+# DOCUMENTATION ASSETS
+documentation/
