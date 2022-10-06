@@ -3,21 +3,11 @@ import {Form, FormControl, Nav, Navbar, NavDropdown, OverlayTrigger} from 'react
 import {storiesOf, addDecorator} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
 
-import {
-  AlertDismissable,
-  Badge,
-  Button,
-  Breadcrumb,
-  Dropdown,
-  DropdownButton,
-  Modal,
-  Pagination,
-  ProgressBar,
-  Table,
-  Tooltip,
-} from '../components';
+import {AlertDismissable, Badge, Button, Breadcrumb, Dropdown, DropdownButton, Modal, Pagination, ProgressBar, Table, Tooltip} from '../components';
 
 import '../scss/bootstrap-storybook.scss';
+import Login from '../components/shared/Login';
+import Register from '../components/shared/Register';
 
 function noop(event) {
   event.preventDefault();
@@ -30,50 +20,32 @@ const MarginDecorator = (storyFn) => <div style={margins}>{storyFn()}</div>;
 addDecorator(MarginDecorator);
 
 // Stories of components
-storiesOf('Welcome', module).add('Hey there 👋', () => (
-  <div>
-    <h2>{'MetaBrainz UI Library'}</h2>
-    <p>
-      {
-        'This storybook is around to help you find your way around our UI components. We hope it will help us maintain a scalable and consistent visual system for UI development. Look around and feel free to reach out to us on IRC #metabrainz to talk about it! 😀'
-      }
-    </p>
-    <p>
-      <strong>{'Some quick links:'}</strong>
-    </p>
-    <li>
-      <a href="https://metabrainz.org/">{'MetaBrainz'}</a>
-    </li>
-    <li>
-      <a href="https://github.com/metabrainz/design-system">{'GitHub Repo'}</a>
-    </li>
-    <li>
-      <a href="https://tickets.musicbrainz.org/">{'Bug Tracker'}</a>
-    </li>
-    <li>
-      <a href="https://twitter.com/MusicBrainz">{'Twitter'}</a>
-    </li>
-  </div>
-));
+storiesOf('Welcome', module)
+  .add('Hey there 👋', () => (
+    <div>
+      <h2>{'MetaBrainz UI Library'}</h2>
+      <p>
+        {'This storybook is around to help you find your way around our UI components. We hope it will help us maintain a scalable and consistent visual system for UI development. Look around and feel free to reach out to us on IRC #metabrainz to talk about it! 😀'}
+      </p>
+      <p><strong>{'Some quick links:'}</strong></p>
+      <li><a href="https://metabrainz.org/">{'MetaBrainz'}</a></li>
+      <li><a href="https://github.com/metabrainz/design-system">{'GitHub Repo'}</a></li>
+      <li><a href="https://tickets.musicbrainz.org/">{'Bug Tracker'}</a></li>
+      <li><a href="https://twitter.com/MetaBrainz">{'Twitter'}</a></li>
+    </div>
+  ));
 
 storiesOf('Alert', module)
-  .add(
-    'Danger Alert',
-    () => (
-      <div>
-        <AlertDismissable variant="danger">
-          <p>
-            {'You just deleted the entity. The changes will now be voted on. Click '}
-            <a className="alert-link">{'here'}</a> {'to know more!'}
-          </p>
-        </AlertDismissable>
-      </div>
-    ),
-    {
-      info: 'Danger alerts should be used when the system has failed to perform an action, or when the user has made an error.',
-    },
-  )
-
+  .add('Danger Alert', () => (
+    <div>
+      <AlertDismissable variant="danger">
+        <p>{'You just deleted the entity. The changes will now be voted on. Click '}<a className="alert-link">{'here'}</a> {'to know more!'}</p>
+      </AlertDismissable>
+    </div>
+  ),
+  {
+    info: 'Danger alerts should be used when the system has failed to perform an action, or when the user has made an error.',
+  })
   .add(
     'Info Alert',
     () => (
@@ -381,6 +353,21 @@ storiesOf('Progress Bar', module).add(
     info: 'Progress bars help give users immediate feedback. They reduce a user’s uncertainty and give them a reason to wait for an action to complete.',
   },
 );
+
+
+storiesOf('Login', module)
+  .add('Default', () => (
+    <Login cover="/cover.jpg" />
+  ), {
+    info: 'Login component',
+  });
+
+storiesOf('Register', module)
+  .add('Default', () => (
+    <Register cover="/cover.jpg" />
+  ), {
+    info: 'Login component',
+  });
 
 storiesOf('Pagination', module)
   .add(
