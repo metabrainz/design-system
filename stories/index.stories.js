@@ -6,8 +6,6 @@ import {action} from '@storybook/addon-actions';
 import {AlertDismissable, Badge, Button, Breadcrumb, Dropdown, DropdownButton, Modal, Pagination, ProgressBar, Table, Tooltip} from '../components';
 
 import '../scss/bootstrap-storybook.scss';
-import Login from '../components/shared/Login';
-import Register from '../components/shared/Register';
 
 function noop(event) {
   event.preventDefault();
@@ -353,21 +351,6 @@ storiesOf('Progress Bar', module).add(
     info: 'Progress bars help give users immediate feedback. They reduce a user’s uncertainty and give them a reason to wait for an action to complete.',
   },
 );
-
-
-storiesOf('Login', module)
-  .add('Default', () => (
-    <Login cover="/cover.jpg" />
-  ), {
-    info: 'Login component',
-  });
-
-storiesOf('Register', module)
-  .add('Default', () => (
-    <Register cover="/cover.jpg" />
-  ), {
-    info: 'Login component',
-  });
 
 storiesOf('Pagination', module)
   .add(
