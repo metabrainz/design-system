@@ -19,13 +19,18 @@
 
 This design system is a living, breathing document that contains all of the building blocks (React components, colors, icons, layout, etc) of the MetaBrainz projects. It aims to be single source of truth for developers and designers. Still a work in progress, always will be. 
 
+## Quick Links
+
+- [Logo folder](./brand/logos)
+- [Storybook project](https://metabrainz.github.io/design-system/)
+
 ## Guidelines
 
-- [Design](https://github.com/metabrainz/design-system/blob/master/guidelines/design-guidelines.md)
-- [Components](https://github.com/metabrainz/design-system/blob/master/guidelines/component-usage.md)
-- [Contributing](https://github.com/metabrainz/design-system/blob/master/guidelines/component-usage.md)
-- [Logos](https://github.com/metabrainz/design-system/blob/master/guidelines/design-guidelines.md)
-- [Writing Styleguide](https://github.com/metabrainz/design-system/blob/master/guidelines/style-guidelines.md)
+- [Design](./guidelines/design-guidelines.md)
+- [Components](./guidelines/component-usage.md)
+- [Contributing](./guidelines/component-usage.md)
+- [Logos](./guidelines/design-guidelines.md)
+- [Writing Styleguide](./guidelines/style-guidelines.md)
 
 ## Tech stack
 
