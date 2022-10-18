@@ -15,6 +15,8 @@ For style (writing) guidelines, please use:
 
 ## Logo
 
+[Logo folder](../brand/logos)
+
 Use logos and logo sizes consistently across projects.</br>
 For instance, Brainz logo mini is used as the top left logo across all MB database project pages.
 </br>When unsure, align with other projects.
@@ -101,22 +103,6 @@ When in doubt, leave it out.
 >![#800080](https://via.placeholder.com/15/800080/800080.png) ![#ffa500](https://via.placeholder.com/15/ffa500/ffa500.png) MusicBrainz gradient</br>
 >`#800080 (web purple)` > `#ffa500 (web orange)`
 
-###### AcousticBrainz sub-brand colours
-
->![#4e7ec2](https://via.placeholder.com/15/4e7ec2/4e7ec2.png) AcousticBrainz</br>
->`R 78, G 126, B 194` `C 72, M 46, Y 0, K 0` `#4e7ec2` `PANTONE: 660 C`
-
->![#4e7ec2](https://via.placeholder.com/15/4e7ec2/4e7ec2.png) ![#ffa500](https://via.placeholder.com/15/ffa500/ffa500.png) AcousticBrainz gradient</br>
->`#4e7ec2` > `#ffa500 (web orange)`
-
-###### MessyBrainz sub-brand colours
-
->![#b50437](https://via.placeholder.com/15/b50437/b50437.png) AcousticBrainz</br>
->`R 181, G 4, B 55` `C 20, M 100, Y 78, K 11` `#b50437` `PANTONE: 200 C`
-
->![#b50437](https://via.placeholder.com/15/b50437/b50437.png) ![#ffa500](https://via.placeholder.com/15/ffa500/ffa500.png) AcousticBrainz gradient</br>
->`#b50437` > `#ffa500 (web orange)`
-
 ###### CritiqueBrainz sub-brand colours
 
 >![#36b5b2](https://via.placeholder.com/15/36b5b2/36b5b2.png) CritiqueBrainz</br>
@@ -166,6 +152,8 @@ When in doubt, leave it out.
 >`#ffde00` > `#ffa500 (web orange)`
 
 ## Typefaces
+
+[Font folder](../brand/fonts)
 
 Note: The MetaBrainz sites are catching up, so you may see other fonts in use.
 
