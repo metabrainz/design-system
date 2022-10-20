@@ -162,6 +162,8 @@ We use two terms to refer to the people who interact with our data, sites and ap
 
 To avoid confusion, use: MB = Musicbrainz, MeB = MetaBrainz
 
+We refer to MetaBrainz sub-sites/brands as: Project/s
+
 
 ## Licence
 These style guidelines are released under the [Creative Commons Attribution-ShareAlike(BY-SA) 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.
