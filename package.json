@@ -39,9 +39,9 @@
     "musicbrainz"
   ],
   "devDependencies": {
-    "@babel/core": "^7.16.12",
+    "@babel/core": "^7.20.2",
     "@babel/eslint-parser": "^7.16.5",
-    "@babel/runtime": "^7.16.7",
+    "@babel/runtime": "^7.20.1",
     "@storybook/addon-actions": "^6.5.12",
     "@storybook/addon-links": "^6.5.12",
     "@storybook/addon-postcss": "^2.0.0",
