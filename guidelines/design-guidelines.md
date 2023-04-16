@@ -1,5 +1,5 @@
 For external sharing, and additional project-specific details, please use the PDF guidelines:</br>
-<a href="./design guidelines%20-%20MetaBrainz">MetaBrainz Guidelines</a> | <a href="./design%20guidelines%20-%20MusicBrainz">MusicBrainz Guidelines</a>
+<a href="..blob/master/guidelines/design guidelines%20-%20MetaBrainz">MetaBrainz Guidelines</a> | <a href="./design%20guidelines%20-%20MusicBrainz">MusicBrainz Guidelines</a>
 
 For style (writing) guidelines, please use:
 <a href="./style-guidelines.md">Style Guidelines</a>
