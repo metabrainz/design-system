@@ -23,7 +23,7 @@ This design system is a living, breathing document that contains all of the buil
 
 - [Logo folder](./brand/logos)
 - [Storybook project](https://metabrainz.github.io/design-system/)
-- Figma mockups: [MetaBrainz](https://www.figma.com/file/L0qNv3z5vSkNDoiX7BzaY5/MetaBrainz-redesign), [MusicBrainz](https://www.figma.com/file/ln8XiFLit634KC3YkUW2RS/MusicBrainz-redesign), [ListenBrainz](https://www.figma.com/file/YRbCOtFHBez8XmMdCKbGta/ListenBrainz-redesign), [CritiqueBrainz](https://www.figma.com/file/nSqrbsMcVARmj52kyXYqwb/CritiqueBrainz-redesign)
+- Figma mockups: [MetaBrainz](https://www.figma.com/file/L0qNv3z5vSkNDoiX7BzaY5/MetaBrainz-redesign), [MusicBrainz](https://www.figma.com/file/ln8XiFLit634KC3YkUW2RS/MusicBrainz-redesign), [CritiqueBrainz](https://www.figma.com/file/nSqrbsMcVARmj52kyXYqwb/CritiqueBrainz-redesign), [ListenBrainz](https://www.figma.com/file/YRbCOtFHBez8XmMdCKbGta/ListenBrainz-redesign), [ListenBrainz App](https://www.figma.com/file/tFLTQiq7QlA1oGRTJVtXml/ListenBrainz-Android)
 
 ## Guidelines
 
