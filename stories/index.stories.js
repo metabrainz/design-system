@@ -417,21 +417,26 @@ storiesOf('Table', module).add('Default', () => {
       price: 2.22,
     },
   ];
-  const columns = [
-    {
-      dataField: 'id',
-      text: 'Product ID',
-    },
-    {
-      dataField: 'name',
-      text: 'Product Name',
-    },
-    {
-      dataField: 'price',
-      text: 'Product Price',
-    },
-  ];
-  return <Table columns={columns} data={products} keyField="id" />;
+  return (
+    <Table>
+      <thead>
+        <tr>
+          <th>{'Product ID'}</th>
+          <th>{'Product Name'}</th>
+          <th>{'Product Price'}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {products.map((product, id) => (
+          <tr key={id}>
+            <td>{product.id}</td>
+            <td>{product.name}</td>
+            <td>{product.price}</td>
+          </tr>
+        ))}
+      </tbody>
+    </Table>
+  );
 });
 
 storiesOf('Tooltip', module).add('Default', () => (
