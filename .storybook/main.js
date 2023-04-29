@@ -21,10 +21,13 @@ module.exports = {
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-        use: [
-          {loader: 'url-loader?limit=100000'}
-        ]
-      },
+        type: 'asset',
+        parser: {
+          dataUrlCondition: {
+            maxSize: 100000
+          }
+        }
+      }
     );
 
     return config;

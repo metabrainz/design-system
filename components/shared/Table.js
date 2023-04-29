@@ -1,3 +1,3 @@
-import BootstrapTable from 'react-bootstrap-table-next';
+import Table from 'react-bootstrap/Table';
 
-export default BootstrapTable;
+export default Table;
