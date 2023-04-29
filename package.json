@@ -10,8 +10,9 @@
     "access": "public"
   },
   "scripts": {
-    "dist": "sass scss/bootstrap-generic.scss | tee | postcss --use autoprefixer --no-map > dist/bootstrap.css",
+    "dist": "sass scss/bootstrap-generic.scss | tee | postcss --use autoprefixer --no-map > dist/bootstrap-generic.css",
     "dist-mb": "sass scss/bootstrap-mb.scss | tee | postcss --use autoprefixer --no-map > dist/bootstrap-mb.css",
+    "dist-lb": "sass scss/bootstrap-lb.scss | tee | postcss --use autoprefixer --no-map > dist/bootstrap-lb.css",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o docs-build",
     "lint": "eslint --fix --ext .ts,.tsx,.js,.jsx,.md .",
