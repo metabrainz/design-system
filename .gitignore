@@ -27,4 +27,7 @@ docs-build/
 *:Zone.Identifier
 Thumbs.db
 Thumbs.db:encryptable
+
+# IDEs
 .idea
+.vscode
