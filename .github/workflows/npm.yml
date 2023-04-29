@@ -15,7 +15,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           # Defaults to the user or organization that owns the workflow file
           scope: '@metabrainz'
-      - run: yarn
+      - run: yarn && yarn dist && yarn dist-mb && yarn dist-lb
       - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
