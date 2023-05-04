@@ -31,3 +31,6 @@ Thumbs.db:encryptable
 # IDEs
 .idea
 .vscode
+
+# Final building products
+dist/
