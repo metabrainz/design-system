@@ -24,10 +24,10 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-    .border#{$infix}-top {      border-top: $border-width solid $border-color ; }
-    .border#{$infix}-right {    border-right: $border-width solid $border-color ; }
-    .border#{$infix}-bottom {   border-bottom: $border-width solid $border-color ; }
-    .border#{$infix}-left {     border-left: $border-width solid $border-color ; }
+    .border#{$infix}-top {      border-top: $border-width solid $border-color  !important; }
+    .border#{$infix}-right {    border-right: $border-width solid $border-color  !important; }
+    .border#{$infix}-bottom {   border-bottom: $border-width solid $border-color  !important; }
+    .border#{$infix}-left {     border-left: $border-width solid $border-color  !important; }
 
     .border#{$infix}-top-0 {    border-top: 0 !important; }
     .border#{$infix}-right-0 {  border-right: 0 !important; }
@@ -35,13 +35,13 @@
     .border#{$infix}-left-0 {   border-left: 0 !important; }
 
     .border#{$infix}-x {
-      border-left: $border-width solid $border-color ;
-      border-right: $border-width solid $border-color ;
+      border-left: $border-width solid $border-color !important;
+      border-right: $border-width solid $border-color !important;
     }
 
     .border#{$infix}-y {
-      border-top: $border-width solid $border-color ;
-      border-bottom: $border-width solid $border-color ;
+      border-top: $border-width solid $border-color !important;
+      border-bottom: $border-width solid $border-color !important;
     }
   }
 }
