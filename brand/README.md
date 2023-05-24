@@ -9,8 +9,8 @@ For brand guidelines (how to use these elements) please see <a href="../guidelin
 When required, a MetaBrainz project attribution message must appear in the following places:
 
 1. Each "page" that displays data from a MetaBrainz project must include a short piece of text that states that this page includes data from a MetaBrainz project AND one of the following:
-   _ A text link that links to the MetaBrainz project (e.g. https://musicbrainz.org )
-   _ A small logo of the MetaBrainz project
+   * A text link that links to the MetaBrainz project (e.g. https://musicbrainz.org )
+   * A small logo of the MetaBrainz project
 2. An "about us" or "about our product" type page must display a prominent MetaBrainz project logo and attribution text.
 
 Attribution is required in each format ("page") or platform where the licensor uses our data (e.g. a website, app or     
