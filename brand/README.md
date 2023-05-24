@@ -28,5 +28,5 @@ Text and link, displayed in the footer of every page that uses MusicBrainz data:
 
 Logo, text and link, displayed prominently in an 'about' page:</br>
 
-<img src="../brand/logos/MetaBrainz/SVG/MusicBrainz_logo.svg" alt="MusiBcrainz logo" height="55px"></br>
+<img src="../brand/logos/MusicBrainz/SVG/MusicBrainz_logo.svg" alt="MusiBcrainz logo" height="55px"></br>
 *This application uses data from [MusicBrainz](https://musicbrainz.org/)*
