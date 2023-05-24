@@ -27,15 +27,15 @@ Text and link, displayed in the footer of every page that uses MusicBrainz data:
 
 ##### Option A
 
-> *Powered with data from [MusicBrainz](https://musicbrainz.org/)*
+&nbsp; &nbsp; &nbsp; &nbsp; *Powered with data from [MusicBrainz](https://musicbrainz.org/)*
 
 ##### Option B
 
-> Powered with data from MusicBrainz <img src="../brand/logos/MusicBrainz/SVG/MusicBrainz_logo_mini.svg" alt="MusicBcrainz logo" height="25px" style="align: bottom">
+&nbsp; &nbsp; &nbsp; &nbsp; Powered with data from MusicBrainz <img src="../brand/logos/MusicBrainz/SVG/MusicBrainz_logo_tiny.svg" alt="MusicBcrainz logo" height="25px" style="align: bottom">
 
 #### About us page attribution example
 
 Logo, text and link, displayed prominently in an 'about' page:</br>
 
-> <img src="../brand/logos/MusicBrainz/SVG/MusicBrainz_logo.svg" alt="MusiBcrainz logo" height="55px">
-> *This application uses data from [MusicBrainz](https://musicbrainz.org/)*
+&nbsp; &nbsp; &nbsp; &nbsp; <img src="../brand/logos/MusicBrainz/SVG/MusicBrainz_logo.svg" alt="MusiBcrainz logo" height="55px"><br/>
+&nbsp; &nbsp; &nbsp; &nbsp; *This application uses data from [MusicBrainz](https://musicbrainz.org/)*
