@@ -27,12 +27,12 @@ Text and link, displayed in the footer of every page that uses MusicBrainz data:
 
 ##### Option A
 
-*Powered with data from [MusicBrainz](https://musicbrainz.org/)*
+  *Powered with data from [MusicBrainz](https://musicbrainz.org/)*
 
 ##### Option B
 
-Powered with data from MusicBrainz
-<img src="brand/logos/MusicBrainz/SVG/MusicBrainz_logo_icon.svg" alt="MusiBcrainz logo" height="55px">
+   Powered with data from MusicBrainz
+<img src="../brand/logos/MusicBrainz/SVG/MusicBrainz_logo_icon.svg" alt="MusicBcrainz logo" height="25px" style="align: bottom">
 
 #### About us page attribution example
 
