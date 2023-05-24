@@ -31,7 +31,7 @@ Text and link, displayed in the footer of every page that uses MusicBrainz data:
 
 ##### Option B
 
-&nbsp; &nbsp; &nbsp; &nbsp; *Powered with data from MusicBrainz* <img src="../brand/logos/MusicBrainz/SVG/MusicBrainz_logo_icon.svg" alt="MusicBcrainz logo" height="25px" style="align: bottom">
+&nbsp; &nbsp; &nbsp; &nbsp; <img src="../assets/attribution-mb.png">
 
 #### About us page attribution example
 
