@@ -10,8 +10,8 @@ When required, a MetaBrainz project attribution message must appear in the follo
 
 1. Each "page" that displays data from a MetaBrainz project must include a short piece of text that
 states that this page includes data from a MetaBrainz project AND one of the following:
-   _A text link that links to the MetaBrainz project (e.g. https://musicbrainz.org )
-   _A small logo of the MetaBrainz project
+   _ A text link that links to the MetaBrainz project (e.g. https://musicbrainz.org )
+   _ A small logo of the MetaBrainz project
 2. An "about us" or "about our product" type page must display a prominent MetaBrainz project logo
 and attribution text.
 
