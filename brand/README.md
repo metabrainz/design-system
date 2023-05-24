@@ -37,7 +37,7 @@ NOTE: It isn't possible for us to align logo correctly here on this GitHub page 
 
 #### About us page attribution example
 
-Logo, text and link, displayed prominently in an 'about' page:</br>
+Logo, text and link, displayed prominently in an *about* page:</br>
 
 &nbsp; &nbsp; &nbsp; &nbsp; <img src="../brand/logos/MusicBrainz/SVG/MusicBrainz_logo.svg" alt="MusiBcrainz logo" height="55px"><br/>
 &nbsp; &nbsp; &nbsp; &nbsp; *This application uses data from [MusicBrainz](https://musicbrainz.org/)*
