@@ -27,7 +27,7 @@ Text and link, displayed in the footer of every page that uses MusicBrainz data:
 
 ##### Option A
 
-  *Powered with data from [MusicBrainz](https://musicbrainz.org/)*
+> *Powered with data from [MusicBrainz](https://musicbrainz.org/)*
 
 ##### Option B
 
