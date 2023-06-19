@@ -33,7 +33,7 @@ Text and link, displayed in the footer of every page that uses MusicBrainz data:
 
 &nbsp; &nbsp; &nbsp; &nbsp; *Powered with data from MusicBrainz* <img src="../brand/logos/MusicBrainz/SVG/MusicBrainz_logo_icon.svg" alt="MusicBcrainz logo" height="25px" align="bottom">
 
-NOTE: It isn't possible for us to align logo correctly here on this GitHub page -- hopefully it will look better on your own page.
+NOTE: It isn’t possible to align the logo correctly on GitHub - make it look better in your pages!
 
 #### About us page attribution example
 
