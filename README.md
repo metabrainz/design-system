@@ -1,7 +1,14 @@
-<h1 align="center">
+<p align="center">
   <br>
-  <a href=""><img src="/assets/cover.jpg" alt="MetaBrainz Design System"></a>
-</h1>
+  <img src="./brand/logos/MetaBrainz/SVG/MetaBrainz_logo_square.svg" alt="MetaBrainz" title="MetaBrainz" width="9%">
+  <img src="./brand/logos/MusicBrainz/SVG/MusicBrainz_logo_square.svg" alt="MusicBrainz" title="MusicBrainz" width="9%">
+  <img src="./brand/logos/ListenBrainz/SVG/ListenBrainz_logo_square.svg" alt="ListenBrainz" title="ListenBrainz" width="9%">
+  <img src="./brand/logos/BookBrainz/SVG/BookBrainz_logo_square.svg" alt="BookBrainz" title="BookBrainz" width="9%">
+  <img src="./brand/logos/CritiqueBrainz/SVG/CritiqueBrainz_logo_square.svg" alt="CritiqueBrainz" title="CritiqueBrainz" width="9%">
+  <img src="./brand/logos/Picard/SVG/Picard_logo_square.svg" alt="Picard" title="Picard" width="9%">
+  <img src="./brand/logos/Cover Art Archive/SVG/CoverArtArchive_logo_square.svg" alt="CoverArtArchive" title="CoverArtArchive" width="9%">
+  <img src="./brand/logos/MetaBrainz Community/SVG/MetaBrainz_Community_logo_square.svg" alt="MetaBrainz Community" title="MetaBrainz Community" width="9%">
+</p>
 
 <h4 align="center">MetaBrainz Design System</h4>
       
