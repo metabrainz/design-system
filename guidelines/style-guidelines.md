@@ -164,6 +164,9 @@ To avoid confusion, use: MB = Musicbrainz, MeB = MetaBrainz
 
 We refer to MetaBrainz sub-sites/brands as: Project/s
 
+We have technical and development terminology that can have a different meaning to a casual
+user. In particular, please avoid using the term 'entity' in end-user messaging. The internal
+useage of this, and a number of other technical terms, is further explained in [ticket MBS-12552](https://tickets.metabrainz.org/browse/MBS-12552).
 
 ## Licence
 These style guidelines are released under the [Creative Commons Attribution-ShareAlike(BY-SA) 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.
