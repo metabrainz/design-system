@@ -3,6 +3,7 @@
   <img src="./brand/logos/MetaBrainz/SVG/MetaBrainz_logo_square.svg" alt="MetaBrainz" title="MetaBrainz" width="9%">
   <img src="./brand/logos/MusicBrainz/SVG/MusicBrainz_logo_square.svg" alt="MusicBrainz" title="MusicBrainz" width="9%">
   <img src="./brand/logos/ListenBrainz/SVG/ListenBrainz_logo_square.svg" alt="ListenBrainz" title="ListenBrainz" width="9%">
+  <img src="./brand/logos/ListenBrainz Local/SVG/ListenBrainz_Local_logo_square.svg" alt="ListenBrainz Local" title="ListenBrainz Local" width="9%">
   <img src="./brand/logos/BookBrainz/SVG/BookBrainz_logo_square.svg" alt="BookBrainz" title="BookBrainz" width="9%">
   <img src="./brand/logos/CritiqueBrainz/SVG/CritiqueBrainz_logo_square.svg" alt="CritiqueBrainz" title="CritiqueBrainz" width="9%">
   <img src="./brand/logos/Picard/SVG/Picard_logo_square.svg" alt="Picard" title="Picard" width="9%">
