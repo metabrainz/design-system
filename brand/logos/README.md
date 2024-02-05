@@ -7,6 +7,7 @@ Select a logo to go to that directory, hover for project title:
   <a href="./MetaBrainz/"> <img src="./MetaBrainz/SVG/MetaBrainz_logo_square.svg" alt="MetaBrainz" title="MetaBrainz" width="9%"></a>  
   <a href="./MusicBrainz/"> <img src="./MusicBrainz/SVG/MusicBrainz_logo_square.svg" alt="MusicBrainz" title="MusicBrainz" width="9%"></a>  
   <a href="./ListenBrainz/"> <img src="./ListenBrainz/SVG/ListenBrainz_logo_square.svg" alt="ListenBrainz" title="ListenBrainz" width="9%"></a>  
+  <a href="./ListenBrainz Local/"> <img src="./ListenBrainz Local/SVG/ListenBrainz_Local_logo_square.svg" alt="ListenBrainz Local" title="ListenBrainz Local" width="9%"></a>  
   <a href="./BookBrainz/"> <img src="./BookBrainz/SVG/BookBrainz_logo_square.svg" alt="BookBrainz" title="BookBrainz" width="9%"></a>  
   <a href="./CritiqueBrainz/"> <img src="./CritiqueBrainz/SVG/CritiqueBrainz_logo_square.svg" alt="CritiqueBrainz" title="CritiqueBrainz" width="9%"></a>  
   <a href="./Picard/"> <img src="./Picard/SVG/Picard_logo_square.svg" alt="Picard" title="Picard" width="9%"></a>  
