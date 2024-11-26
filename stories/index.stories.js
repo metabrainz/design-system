@@ -29,7 +29,8 @@ storiesOf('Welcome', module)
       <li><a href="https://metabrainz.org/">{'MetaBrainz'}</a></li>
       <li><a href="https://github.com/metabrainz/design-system">{'GitHub Repo'}</a></li>
       <li><a href="https://tickets.musicbrainz.org/">{'Bug Tracker'}</a></li>
-      <li><a href="https://twitter.com/MetaBrainz">{'Twitter'}</a></li>
+      <li><a href="https://mastodon.social/@metabrainz">{'Mastodon'}</a></li>
+      <li><a href="https://bsky.app/profile/metabrainz.org">{'Bluesky'}</a></li>
     </div>
   ));
 
