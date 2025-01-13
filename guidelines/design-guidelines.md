@@ -72,10 +72,10 @@ A non-full black is easier to read against a white background, including for mos
 
 ###### MetaBrainz colours
 
->![#eb743b](https://via.placeholder.com/15/eb743b/eb743b.png) MetaBrainz orange</br>
+>![#eb743b](https://placehold.co/15x15/eb743b/eb743b.png) MetaBrainz orange</br>
 >`R 235, G 116, B 59` `C 4, M 67, Y 87, K 0` `#eb743b` `PANTONE:1575 C`
 
->![#1e1e1e](https://via.placeholder.com/15/1e1e1e/1e1e1e.png) MetaBrainz black (not full black)</br>
+>![#1e1e1e](https://placehold.co/15x15/1e1e1e/1e1e1e.png) MetaBrainz black (not full black)</br>
 >`R 30, G 30, B 30` `C 72, M 66, Y 65, K 75` `#1e1e1e` `PANTONE:Neutral Black C`
 
 ###### Colours are to be used *sparingly*.
@@ -89,66 +89,66 @@ When in doubt, leave it out.
 
 ###### MetaBrainz sub-brand colours
 
->![#5aa854](https://via.placeholder.com/15/5aa854/5aa854.png) MetaBrainz</br>
+>![#5aa854](https://placehold.co/15x15/5aa854/5aa854.png) MetaBrainz</br>
 >`R 90, G 168, B 84` `C 69, M 11, Y 90, K 0` `#5aa854` `PANTONE: 7738 C`
 
->![#3b9766](https://via.placeholder.com/15/3b9766/3b9766.png) ![#ffa500](https://via.placeholder.com/15/ffa500/ffa500.png) MetaBrainz gradient</br>
+>![#3b9766](https://placehold.co/15x15/3b9766/3b9766.png) ![#ffa500](https://placehold.co/15x15/ffa500/ffa500.png) MetaBrainz gradient</br>
 >`#3b9766` > `#ffa500 (web orange)`
 
 ###### MusicBrainz sub-brand colours
 
->![#ba478f](https://via.placeholder.com/15/ba478f/ba478f.png) MusicBrainz</br>
+>![#ba478f](https://placehold.co/15x15/ba478f/ba478f.png) MusicBrainz</br>
 >`R 186, G 71, B 143` `C 27, M 86, Y 9, K 0` `#ba478f` `PANTONE: 674 C`
 
->![#800080](https://via.placeholder.com/15/800080/800080.png) ![#ffa500](https://via.placeholder.com/15/ffa500/ffa500.png) MusicBrainz gradient</br>
+>![#800080](https://placehold.co/15x15/800080/800080.png) ![#ffa500](https://placehold.co/15x15/ffa500/ffa500.png) MusicBrainz gradient</br>
 >`#800080 (web purple)` > `#ffa500 (web orange)`
 
 ###### CritiqueBrainz sub-brand colours
 
->![#36b5b2](https://via.placeholder.com/15/36b5b2/36b5b2.png) CritiqueBrainz</br>
+>![#36b5b2](https://placehold.co/15x15/36b5b2/36b5b2.png) CritiqueBrainz</br>
 >`R 54, G 181, B 178` `C 71, M 5, Y 35, K 0` `#36b5b2` `PANTONE: 7465 C`
 
->![#36b5b2](https://via.placeholder.com/15/36b5b2/36b5b2.png) ![#ffa500](https://via.placeholder.com/15/ffa500/ffa500.png) CritiqueBrainz gradient</br>
+>![#36b5b2](https://placehold.co/15x15/36b5b2/36b5b2.png) ![#ffa500](https://placehold.co/15x15/ffa500/ffa500.png) CritiqueBrainz gradient</br>
 >`#36b5b2` > `#ffa500 (web orange)`
 
 ###### ListenBrainz sub-brand colours
 
->![#353070](https://via.placeholder.com/15/353070/353070.png) ListenBrainz</br>
+>![#353070](https://placehold.co/15x15/353070/353070.png) ListenBrainz</br>
 >`R 53, G 48, B 112` `C 95, M 95, Y 24, K 12` `#353070` `PANTONE: 274 C`
 
->![#353070](https://via.placeholder.com/15/353070/353070.png) ![#ffa500](https://via.placeholder.com/15/ffa500/ffa500.png) ListenBrainz gradient</br>
+>![#353070](https://placehold.co/15x15/353070/353070.png) ![#ffa500](https://placehold.co/15x15/ffa500/ffa500.png) ListenBrainz gradient</br>
 >`#353070` > `#ffa500 (web orange)`
 
 ###### BookBrainz sub-brand colours
 
->![#754e37](https://via.placeholder.com/15/754e37/754e37.png) BookBrainz</br>
+>![#754e37](https://placehold.co/15x15/754e37/754e37.png) BookBrainz</br>
 >`R 78, G 126, B 194` `C 72, M 46, Y 0, K 0` `#754e37` `PANTONE: 660 C`
 
->![#754e37](https://via.placeholder.com/15/754e37/754e37.png) ![#ffa500](https://via.placeholder.com/15/ffa500/ffa500.png) BookBrainz gradient</br>
+>![#754e37](https://placehold.co/15x15/754e37/754e37.png) ![#ffa500](https://placehold.co/15x15/ffa500/ffa500.png) BookBrainz gradient</br>
 >`#754e37` > `#ffa500 (web orange)`
 
 ###### Picard sub-brand colours
 
->![#771b85](https://via.placeholder.com/15/771b85/771b85.png) Picard</br>
+>![#771b85](https://placehold.co/15x15/771b85/771b85.png) Picard</br>
 >`R 119, G 27, B 133` `C 66, M 100, Y 9, K 2` `#771b85` `PANTONE: 7588 C`
 
->![#771b85](https://via.placeholder.com/15/771b85/771b85.png) ![#ffa500](https://via.placeholder.com/15/ffa500/ffa500.png) Picard gradient</br>
+>![#771b85](https://placehold.co/15x15/771b85/771b85.png) ![#ffa500](https://placehold.co/15x15/ffa500/ffa500.png) Picard gradient</br>
 >`#771b85` > `#ffa500 (web orange)`
 
 ###### Cover Art Archive sub-brand colours
 
->![#20656c](https://via.placeholder.com/15/20656c/20656c.png) Cover Art Archive</br>
+>![#20656c](https://placehold.co/15x15/20656c/20656c.png) Cover Art Archive</br>
 >`R 32, G 101, B 108` `C 87, M 45, Y 49, K 20` `#20656c` `PANTONE: 5473 C`
 
->![#771b85](https://via.placeholder.com/15/771b85/771b85.png) ![#ffa500](https://via.placeholder.com/15/ffa500/ffa500.png) Cover Art Archive gradient</br>
+>![#20656c](https://placehold.co/15x15/20656c/20656c.png) ![#ffa500](https://placehold.co/15x15/ffa500/ffa500.png) Cover Art Archive gradient</br>
 >`#20656c` > `#ffa500 (web orange)`
 
 ###### OfficeBrainz sub-brand colours
 
->![#ffde00](https://via.placeholder.com/15/ffde00/ffde00.png) OfficeBrainz</br>
+>![#ffde00](https://placehold.co/15x15/ffde00/ffde00.png) OfficeBrainz</br>
 >`R 255, G 222, B 0` `C 2, M 9, Y 100, K 20` `#ffde00` `PANTONE: Yellow C`
 
->![#ffde00](https://via.placeholder.com/15/ffde00/ffde00.png) ![#ffa500](https://via.placeholder.com/15/ffa500/ffa500.png) OfficeBrainz gradient</br>
+>![#ffde00](https://placehold.co/15x15/ffde00/ffde00.png) ![#ffa500](https://placehold.co/15x15/ffa500/ffa500.png) OfficeBrainz gradient</br>
 >`#ffde00` > `#ffa500 (web orange)`
 
 ## Typefaces
