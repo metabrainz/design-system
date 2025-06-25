@@ -6,8 +6,9 @@ yarn-error.log*
 # Dependency directories
 node_modules/
 
-# Optional npm cache directory
+# Optional npm cache directory and lock file
 .npm
+package-lock.json
 
 # Optional eslint cache
 .eslintcache
